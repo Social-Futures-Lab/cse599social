@@ -202,7 +202,7 @@ pre > code {
 
 
 /* 
- * If the course title is long, uncomment and adjust this to make it behave on a very narrow 
+ * If the course title is long, uncomment and adjust the max-width to make it behave on a very narrow 
  * display (such as a phone display) without wrapping. 
  */
 /*@media screen and (max-width: 400px) { 
