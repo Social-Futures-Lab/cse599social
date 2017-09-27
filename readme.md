@@ -30,3 +30,7 @@ Any Allen School instructor or TA looking for a new course web design.  It is ex
 ## Credits
 
 This template was derived with permission from Xi Wang's course web for CSE 551.
+
+## Feedback
+
+This is a work in progress.  We are happy to receive your feedback.  Open a Gitlab issue, submit a merge request, or send an email.
