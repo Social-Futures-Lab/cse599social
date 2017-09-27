@@ -16,12 +16,12 @@ Any Allen School instructor or TA looking for a new course web design.  It is ex
 
 ## Step by Step
 
-# Clone or copy this repo into your course web directory.
-# Edit the course title, number, year/quarter, and URL, all in 'nav-bar.html'.  
-# The default menu uses a set of common menu headings 'Schedule', 'Readings', etc.  You may want to change them.  Edit these in 'nav-bar.html'.
-# Each menu item should normally have a corresponding subdirectory. If you changed the menus from the defaults, re-establish this correspondence by copying, renaming and deleting the existing subdirectories.
-# If you use createcal, you may use the createcal template and additional readme in the schedule subdirectory to set up that integration.
-# Add your course content.  There is a home index.html in the root of the repo, and each menu subdirectory also has an index.html. The page content area in each file is annotated with comments.  You should also edit the page title in each file as needed.
+1. Clone or copy this repo into your course web directory.
+2. Edit the course title, number, year/quarter, and URL, all in 'nav-bar.html'.  
+3. The default menu uses a set of common menu headings 'Schedule', 'Readings', etc.  You may want to change them.  Edit these in 'nav-bar.html'.
+4. Each menu item should normally have a corresponding subdirectory. If you changed the menus from the defaults, re-establish this correspondence by copying, renaming and deleting the existing subdirectories.
+5. If you use createcal, you may use the createcal template and additional readme in the schedule subdirectory to set up that integration.
+6. Add your course content.  There is a home index.html in the root of the repo, and each menu subdirectory also has an index.html. The page content area in each file is annotated with comments.  You should also edit the page title in each file as needed.
 
 ## Additional notes
 
