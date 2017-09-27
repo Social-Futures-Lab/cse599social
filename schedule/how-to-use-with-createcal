@@ -1,0 +1,13 @@
+calendar.template and calendar.css are designed to help you to use this template with
+createcal.  To do so, follow these steps:
+
+1. Copy calendar.template into the htmlTemplates subdirectory of the course web,
+replacing the default calendar.template there.
+
+2. Run createcal as normal to generate calendar.html.
+
+3. Remove or rename schedule/index.html, then recreate it as a symlink to calendar.html
+   ln -s ../calendar.html index.html
+
+Now you may update/regenerate the calendar as normal.
+

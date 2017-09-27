@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>CSE 999</title>
+  <meta name="description" content="Course Title">
+
+  <!--<link rel="canonical" href="http://courses.cs.washington.edu/courses/cse999/YRqtr/">-->
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <header class="site-header">
+        <!-- Javascript will load the navigation bar code here. -->
+    </header>
+      
+    <div class="container">
+        
+        <!-- Use this navigation box as desired on some or all pages to provide navigation links 
+             in addition to the top menu. -->
+        <div class="nav-box">
+            <p id="nb1-header" class="nav-box-header">Page Navigation</p>
+            <nav>
+            <ul aria-labelledby="nb1-header">
+                <li><a href="">Link 1</a></li>
+                <li><a href="">Link 2</a></li>
+                <li><a href="">Link 3</a></li>
+                <li><a href="">Link 4</a></li>
+                <li><a href="">Link 5</a></li>
+            </ul>
+            </nav>
+        </div>
+    
+        <!-- Begin home page content -->
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+            mollit anim id est laborum.</p>
+
+        <h2 id="general-information">General information</h2>
+
+        <ul>
+          <li>Staff: </li>
+          <li>Time and Location: </li>
+          <li><a href="https://canvas.uw.edu/">Canvas</a></li>
+        </ul>
+        
+        <!-- End home page content -->
+
+    </div>
+      
+    <footer class="site-footer">
+        <!-- Javascript will load the footer code here. -->   
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function(){    
+            // Include the nav bar and footer
+            $("header").load("nav-bar.html");
+            $("footer").load("footer.html");
+        });
+    </script>
+
+</body>
+
+</html>
