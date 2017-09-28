@@ -27,6 +27,10 @@
     </header>
 
     <div class="container">    
+    <p>
+    <center><a href='../calendar/subscribe.html'>Subscribe to this calendar (google, iCal, etc.)</a></center>
+    <p>
+
 %%BODY%%
     </div>
 
