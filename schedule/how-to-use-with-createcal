@@ -7,7 +7,7 @@ replacing the default calendar.template there.
 2. Run createcal as normal to generate calendar.html.
 
 3. Remove or rename schedule/index.html, then recreate it as a symlink to calendar.html
-   ln -s ../calendar.html index.html
+   ln -s ../calendar/calendar.html index.html
 
 Now you may update/regenerate the calendar as normal.
 

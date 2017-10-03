@@ -18,8 +18,11 @@ $(function(){
             }           
         });
         
-        // Prepend '../' to each href.
-        $(".navbar-nav a[href]").attr("href", function(i, href){
+        // Prepend '../' to each href unless the href starts with http or /.
+        $(".navbar-nav a[href]").attr("href", function(i, href) {
+            if ((href.startsWith('http') === true) || (href.startsWith('/') === true)) {
+                return href;
+            }
             return "../" + href;
         });
         
