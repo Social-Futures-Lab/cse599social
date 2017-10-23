@@ -41,6 +41,14 @@
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/nav-bar.js"></script>
     <script src="../js/footer.js"></script>
+    <script>
+    if ( window.jQuery ) {
+      var d = new Date();
+      var today = d.getFullYear() + '-' + ('0'+(d.getMonth()+1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2);
+      $('#' + today).addClass('today');
+    }
+    </script>
+
   </body>
 
 </html>
