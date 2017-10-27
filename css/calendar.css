@@ -5,10 +5,16 @@ table { page-break-inside: avoid;
 table.listtable {
     margin-left:auto;
     margin-right:auto;
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+
+table.listtable th {
+    padding-left:4px;
 }
 
 table.listtable thead {
-    background: #fc9;
+    background-color: #ccc;
 }
 
 table.listtable td {

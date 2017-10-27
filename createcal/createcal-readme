@@ -1,0 +1,21 @@
+Files in this directory, and ../css/calendar.css are designed to 
+help you to use this template with createcal.  To integrate with the 
+createcal calendar, follow these steps:
+
+1. Copy calendar.template into <course_web>/calendar/htmlTemplates/,
+replacing the default calendar.template there.
+
+2. Run createcal as normal to generate calendar.html.
+
+3. In this example, we are replacing the schedule page with the createcal calendar.
+First remove or rename schedule/index.html, then recreate it as a symlink to calendar.html
+   cd <course_web>/schedule
+   ln -s ../calendar/calendar.html index.html
+
+Now you may update/regenerate the calendar as normal.
+
+If you use other createcal features such as the section list, the homework 
+list, etc. you may also want to copy the corresponding templates to htmlTemplates, 
+and create additional symlinks to corresponding creatcal html output.
+
+You may also edit the templates if you desire to change the titles, style, or layout.
