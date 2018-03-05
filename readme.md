@@ -28,6 +28,9 @@ Any Allen School instructor or TA looking for a new course web design.  It is ex
 ### How To Avoid Wrapping in the Navigation Bar
 A responsive feature of the template is the top menu bar.  The menus automatically flip from horizontal to vertical orientation when the browser width is less than 768 pixels.  The page title and menus must fit inside 768 horizontal pixels, otherwise you will see a fairly ugly wrapping behavior before the menus flip.  If you see such wrapping issues, you may want to uncomment the css in the final two sections of css/main.css, and adjust widths there as needed.
 
+### Problems Loading from Local Disk
+It should work out of the box when using a web server.  It generally doesn't work if you open files directly from your local disk.  The main problem is that we are using javascript to load header and footer content.  Some browsers (notably Chrome and IE, and maybe others) will decline to do this for security reasons.  Firefox will currently load the home page, but not other pages.
+
 ### Improving your HTML with Bootstrap
 We are loading Bootstrap in this template.  Bootstrap offers a large menu of responsive styling and interactive elements.  If you are inclined to learn just a little more about Bootstrap you may be able to dramatically improve the look and usability of your site.  Much of the benefit can be had quite simply by adding a few bootstrap classes to your html.  To learn more see https://getbootstrap.com/docs/3.3.
 
@@ -37,4 +40,4 @@ This template was derived with permission from Xi Wang's course web for CSE 551.
 
 ## Feedback
 
-This is a work in progress.  We are happy to receive your feedback.  Open a Gitlab issue, submit a merge request, or send an email.
+This is a work in progress.  We are happy to receive your feedback.  Open a Gitlab issue, submit a merge request, or send an email (support@cs.washington.edu).
