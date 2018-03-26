@@ -1,7 +1,7 @@
 # Simple Course Web Template
 
 This is a simple, clean, responsive template for Allen School course webs.  
-You can see what it looks like [here](http://www.cs.washington.edu/lab/simple-courseweb-template).
+You can see what it looks like [here](http://courses.cs.washington.edu/simple-courseweb-template).
 
 ## Intended Audience
 
