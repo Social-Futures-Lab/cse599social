@@ -22,7 +22,7 @@
 
     <div class="container">    
     <h1>Schedule</h1>
-    <center><a href='../calendar/subscribe.html'>Subscribe to this calendar (google, iCal, etc.)</a></center>
+    <p style="text-align:center"><a href='../calendar/subscribe.html'>Subscribe to this calendar (google, iCal, etc.)</a></p>
     <p>
 
 %%BODY%%
