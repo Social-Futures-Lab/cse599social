@@ -1,0 +1,216 @@
+table { page-break-inside: avoid;
+}
+
+/* styles for the list pages */
+table.listtable {
+    margin-left:auto;
+    margin-right:auto;
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+
+table.listtable th {
+    padding-left:4px;
+}
+
+table.listtable thead {
+    background-color: #ccc;
+}
+
+table.listtable td {
+    vertical-align:top;
+    padding: 5px;
+}
+
+span.list_description {
+  font-style: italic;
+}
+span.list_reading {
+}
+span.list_materials {
+}
+
+/* Each month in the full html table is a table.monthtable */
+table.monthtable {
+    table-layout:fixed;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    border-collapse:collapse;
+    /* background-color:#f8f8f8; */
+}
+
+table.monthtable td {
+    vertical-align:top;
+    border-style:solid;
+    border-width:1px;
+}
+
+/* These control the general properties of an individual date entry. */
+
+/* The month name box */
+td.monthtd {
+  text-align:center;
+  font-size:large;
+  background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #e8e8e8 100%);
+  background-image:      -o-linear-gradient(top, #f5f5f5 0%, #e8e8e8 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e8e8e8));
+  background-image:         linear-gradient(to bottom, #f5f5f5 0%, #e8e8e8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);
+  background-repeat: repeat-x;
+}
+
+/* The day of the week boxes */
+td.daytd {
+  background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #e8e8e8 100%);
+  background-image:      -o-linear-gradient(top, #f5f5f5 0%, #e8e8e8 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e8e8e8));
+  background-image:         linear-gradient(to bottom, #f5f5f5 0%, #e8e8e8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);
+  background-repeat: repeat-x;
+  width:100%;
+  text-align:center;
+}
+
+/* An entry that has something in it */
+td.eventtd {
+  font-size:75%;
+  letter-spacing:-0.5px;  
+}
+
+/* An entry not during the quarter */
+td.notinquarter {
+    background-color:LightGray;
+}
+
+/* Highlights today's entry in the calendar */
+table.monthtable td.today {
+    border-width : 5px 5px 5px 5px;
+    border-color : SkyBlue;
+    marker : 1;
+}
+
+/* The date label */
+span.datespan {
+  font-size: medium;
+  float:right;
+  margin-right:5px;  
+  color:DimGray;
+}
+
+
+/* these control the styles of the entries inside
+   an individual date entry. The span's are intended
+   to control font styles.  The div's are intended 
+   for properties applying to the entire entry.
+*/
+
+span.summary{
+}
+span.description {
+  font-style: italic;
+}
+span.reading {
+}
+span.materials {
+}
+span.location {
+}
+
+div.lecture {
+  background-image: -webkit-linear-gradient(top, #d9edf7 0%, #c4e3f3 100%);
+  background-image:      -o-linear-gradient(top, #d9edf7 0%, #c4e3f3 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d9edf7), to(#c4e3f3));
+  background-image:         linear-gradient(to bottom, #d9edf7 0%, #c4e3f3 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9edf7', endColorstr='#ffc4e3f3', GradientType=0);
+  background-repeat: repeat-x;
+/*    background: -moz-linear-gradient(top, Khaki, White);    */
+    padding: 4px;
+    margin:  2px;
+}
+
+div.section {
+    background-image: -webkit-linear-gradient(top, #dff0d8 0%, #d0e9c6 100%);
+  background-image:      -o-linear-gradient(top, #dff0d8 0%, #d0e9c6 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dff0d8), to(#d0e9c6));
+  background-image:         linear-gradient(to bottom, #dff0d8 0%, #d0e9c6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdff0d8', endColorstr='#ffd0e9c6', GradientType=0);
+  background-repeat: repeat-x;
+/*    background: -moz-linear-gradient(top, Tan, White);    */
+    padding: 4px;
+    margin:  2px;
+}
+
+div.lab {
+    background-color:Peru;
+/*    background: -moz-linear-gradient(top, Peru, White);    */
+    padding: 4px;
+    margin:  2px;
+}
+
+div.exam {
+    background-image: -webkit-linear-gradient(top, #f2dede 0%, #ebcccc 100%);
+  background-image:      -o-linear-gradient(top, #f2dede 0%, #ebcccc 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f2dede), to(#ebcccc));
+  background-image:         linear-gradient(to bottom, #f2dede 0%, #ebcccc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2dede', endColorstr='#ffebcccc', GradientType=0);
+  background-repeat: repeat-x;
+/*    background: -moz-linear-gradient(top, DarkSalmon, White);    */
+    padding: 4px;
+    margin:  2px;
+}
+
+div.hw {
+background-image: -webkit-linear-gradient(top, #f2dede 0%, #ebcccc 100%);
+  background-image:      -o-linear-gradient(top, #f2dede 0%, #ebcccc 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f2dede), to(#ebcccc));
+  background-image:         linear-gradient(to bottom, #f2dede 0%, #ebcccc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2dede', endColorstr='#ffebcccc', GradientType=0);
+  background-repeat: repeat-x;
+/*    background: -moz-linear-gradient(top, DarkSalmon, White);    */
+    padding: 4px;
+    margin:  2px;
+    /*background-color:AntiqueWhite;*/
+
+}
+
+div.oh {
+    background-image: -webkit-linear-gradient(top, #fcf8e3 0%, #faf2cc 100%);
+  background-image:      -o-linear-gradient(top, #fcf8e3 0%, #faf2cc 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fcf8e3), to(#faf2cc));
+  background-image:         linear-gradient(to bottom, #fcf8e3 0%, #faf2cc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffcf8e3', endColorstr='#fffaf2cc', GradientType=0);
+  background-repeat: repeat-x;
+/*    background: -moz-linear-gradient(top, AntiqueWhite, White);    */
+    padding: 4px;
+    margin:  2px;
+/*    background: -moz-linear-gradient(top, HoneyDew, White);    */
+    padding: 4px;
+    margin:  2px;
+}
+
+div.holiday {
+     background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #e8e8e8 100%);
+  background-image:      -o-linear-gradient(top, #f5f5f5 0%, #e8e8e8 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e8e8e8));
+  background-image:         linear-gradient(to bottom, #f5f5f5 0%, #e8e8e8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);
+  background-repeat: repeat-x;
+/*    background: -moz-linear-gradient(top, YellowGreen, White);    */
+    padding: 4px;
+    margin:  2px;
+/*    height: 30px;*/
+}
+
+div.other {
+    background-color:Plum;
+/*    background: -moz-linear-gradient(top, Plum, White);    */
+    padding: 4px;
+    margin:  2px;
+}
+
+
+@media print {
+  TABLE, IMG { page-break-during: avoid }
+}
+
