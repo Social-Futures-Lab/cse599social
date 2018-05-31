@@ -20,8 +20,23 @@ Any Allen School instructor or TA looking for a new course web design.  It is ex
 2. Edit the course title, number, year/quarter, and URL, all in 'site/nav-bar.html'.  
 3. The default menu uses a set of common menu headings 'Schedule', 'Readings', etc.  You may want to change them.  Edit these in 'site/nav-bar.html'.
 4. Each menu item should normally have a corresponding subdirectory. If you changed the menus from the defaults, re-establish this correspondence by copying, renaming and deleting the existing subdirectories.
-5. If you use createcal, you may use the createcal templates and additional readme in the site/createcal subdirectory to set up that integration.
+5. If you use createcal, you may use the createcal templates in the site/createcal subdirectory, and additional createcal integration instructions below.
 6. Add your course content.  There is a home index.html in the root of the repo, and each menu subdirectory also has an index.html. The page content area in each file is annotated with comments.  You should also edit the page title in each file as needed.
+
+### Createcal Integration
+
+Files in the directory site/createcal/, and site/css/calendar.css are designed to help you to use this template with createcal.  To integrate with the createcal calendar, follow these steps:
+
+1. Copy files `site/createcal/*.template`into `<course_web>/calendar/htmlTemplates/`, replacing the original createcal files there.
+2. Run `createcal` as normal to rebuild the createcal html files in calendar/*.html.
+3. In this example, we are replacing the schedule page with the createcal calendar.  Remove or rename schedule/index.html, then recreate it as a symlink to calendar/calendar.html
+  * `cd <course_web>/schedule`
+  * `ln -s ../calendar/calendar.html index.html`
+4. Repeat step 3 for other createcal files you use, eg. hwlist, sectionlist, etc.
+
+Now you may update/regenerate the calendars as normal.
+
+You may also edit the templates if you desire to change the titles, style, or layout.  For example, the titles in these createcal templates are designed to work for any course.  If desire to customize the titles to be specific to your course number, year and quarter, simply modify the titles in the files calendar/htmpTemplates/*.template, and run createcal again.
 
 ## Additional notes
 
