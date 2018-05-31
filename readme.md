@@ -36,7 +36,7 @@ Files in the directory site/createcal/, and site/css/calendar.css are designed t
 
 Now you may update/regenerate the calendars as normal.
 
-You may also edit the templates if you desire to change the titles, style, or layout.  For example, the titles in these createcal templates are designed to work for any course.  If you desire to customize the titles to be specific to your course number, year and quarter, simply modify the titles in the files calendar/htmpTemplates/*.template, and run createcal again.
+You may also edit the templates if you desire to change the titles, style, or layout.  For example the titles in these createcal templates use createcal placeholders, and thus are designed to work for any course.  However, if you desire different titles simply modify them in the files calendar/htmpTemplates/*.template and run createcal again.
 
 ## Additional notes
 
