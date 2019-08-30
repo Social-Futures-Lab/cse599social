@@ -1,12 +1,8 @@
 $(function(){    
-    // Assuming the footer is in the parent directory, 
-    // load it, modify img src, prepending "../", and
-    // insert into the page footer.
-    $("footer").load("../site/footer.html", "", function() {
+    // Load the footer, modify img src, prepend the base URL, and insert into the page footer.
+    $("footer").load(basePath + "/site/footer.html", "", function() {
         $("footer img").attr("src", function(i, href){
-            return "../" + href;
+            return basePath + "/" + href;
         });
     });
-});    
-
-
+});
