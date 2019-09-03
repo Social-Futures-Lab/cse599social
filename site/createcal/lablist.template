@@ -10,9 +10,30 @@
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
-    <link href="../site/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../site/css/main.css">
-    <link rel="stylesheet" href="../site/css/calendar.css">
+    <!-- Include this script in order to dynamically load CSS and JS files -->
+    <script>
+        // Get the base path for the course web by extracting 'courses' + courseName + quarter
+        var fullPathArray = window.location.pathname.split('/');
+        var basePathArray = fullPathArray.slice(0,4);
+        var basePath = basePathArray.join('/');
+
+        var cssSources = [
+          '/site/css/bootstrap.min.css',
+          '/site/css/main.css',
+          '/site/css/calendar.css',
+        ];
+
+       // Javscript files to load
+       var jsSources = [
+           '/site/js/jquery.min.js',
+           '/site/js/bootstrap.min.js',
+           '/site/js/nav-bar.js',
+           '/site/js/footer.js'
+       ];
+
+       // Include the script that will load the CSS & Javscript files
+       document.write("<script src=\'" + basePath + "/site/js/load-sources.js\'><\/script>");
+    </script>
   </head>
 
   <body>
@@ -22,7 +43,10 @@
 
     <div class="container">    
     <h1>Labs</h1>
-    <a href='../calendar/subscribe.html'>Subscribe to this calendar (google, iCal, etc.)</a>
+    <!-- Link to the base calendar directory -->
+    <script>
+      document.write("<p style='text-align:center'><a href='" + basePath + "/calendar/subscribe.html'>Subscribe to this calendar (google, iCal, etc.)</a></p>");
+    </script>
     <p>
 
 %%BODY%%
@@ -32,11 +56,6 @@
     <footer class="site-footer">
     <!-- Javascript will load the footer code here. -->
     </footer>
-
-    <script src="../site/js/jquery.min.js"></script>
-    <script src="../site/js/bootstrap.min.js"></script>
-    <script src="../site/js/nav-bar.js"></script>
-    <script src="../site/js/footer.js"></script>
 
   </body>
 

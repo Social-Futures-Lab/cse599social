@@ -42,7 +42,10 @@
 
     <div class="container">    
     <h1>Schedule</h1>
-    <p style="text-align:center"><a href='../calendar/subscribe.html'>Subscribe to this calendar (google, iCal, etc.)</a></p>
+    <!-- Link to the base calendar directory -->
+    <script>
+      document.write("<p style='text-align:center'><a href='" + basePath + "/calendar/subscribe.html'>Subscribe to this calendar (google, iCal, etc.)</a></p>");
+    </script>
     <p>
 
 %%BODY%%
