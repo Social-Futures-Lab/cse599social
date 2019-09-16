@@ -13,6 +13,7 @@ Any Allen School instructor or TA looking for a new course web design.  It is ex
 * Responsive.  It should behave well on any screen size.
 * Createcal integration.  There is a createcal template that should make it easy for createcal users to integrate calendars.
 * Header/footer abstraction. Edit header and footer information in one place.  Javascript inserts it into each page.
+* NEW (Sep 2019) Multi-level subdirectory support. You can now nest your site pages into multiple levels of subdirectories and the header, footer, and styling will work properly.
 
 ## Step by Step
 
@@ -21,7 +22,11 @@ Any Allen School instructor or TA looking for a new course web design.  It is ex
 3. The default menu uses a set of common menu headings 'Schedule', 'Readings', etc.  You may want to change them.  Edit these in 'site/nav-bar.html'.
 4. Each menu item should normally have a corresponding subdirectory. If you changed the menus from the defaults, re-establish this correspondence by copying, renaming and deleting the existing subdirectories.
 5. If you use createcal, you may use the createcal templates in the site/createcal subdirectory, and additional createcal integration instructions below.
-6. Add your course content.  There is a home index.html in the root of the repo, and each menu subdirectory also has an index.html. The page content area in each file is annotated with comments.  You should also edit the page title in each file as needed.
+6. Add your course content. You can use the site/template.html file or any of the other index.html files provided in each menu subdirectory as a template for your pages. To use them, do the following:
+  * Rename the file as needed and place it in the desired directory.
+  * Edit the page title (what shows up at the top of the browser tab).
+  * Edit the content title (the main page heading, e.g. 'Assignments').
+  * Edit your main page content (this area is annoted with comments).
 
 ### Createcal Integration
 
@@ -42,6 +47,9 @@ You may also edit the templates if you desire to change the titles, style, or la
 
 ### How To Avoid Wrapping in the Navigation Bar
 A responsive feature of the template is the top menu bar.  The menus automatically flip from horizontal to vertical orientation when the browser width is less than 768 pixels.  The page title and menus must fit inside 768 horizontal pixels, otherwise you will see a fairly ugly wrapping behavior before the menus flip.  If you see such wrapping issues, you may want to uncomment the css in the final two sections of css/main.css, and adjust widths there as needed.
+
+### Including additional CSS/Javascript, or changing filepaths
+If you want to load additional CSS or JavaScript files, or load them from a location other than the /site directory, you can add/edit the paths to the desired files in the 'cssSources' and 'jsSources' arrays in each *.html file. Be sure to enclose each path in quotes and have a comma after each line. Adding the files to these arrays ensures they are loaded dynamically from the base course web URL (e.g. courses.cs.washington.edu/cse999/19au) such that you can nest your HTML files multiple subdirectories deep and not have to include a relative URL for every CSS/JS file. If you want to load a file from outside of your course web directory, simply use standard HTML syntax between the page's `<head>` tags: `<script src='/path/to/file.js'></script>` for JavaScript and `<link rel='stylesheet' type='text/css' href='/path/to/file.css'>` for CSS.
 
 ### Problems Loading from Local Disk
 It should work out of the box when using a web server.  It generally doesn't work if you open files directly from your local disk.  The main problem is that we are using javascript to load header and footer content.  Some browsers (notably Chrome and IE, and maybe others) will decline to do this for security reasons.  Firefox will currently load the home page, but not other pages.

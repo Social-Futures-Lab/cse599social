@@ -12,84 +12,88 @@
     <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
     <!-- Include this script in order to dynamically load CSS and JS files -->
+    <!-- Only edit if you want to change the paths to your JS/CSS sources -->
     <script>
-            // Get the base path for the course web by extracting 'courses' + courseName + quarter
-            var fullPathArray = window.location.pathname.split('/');
-            var basePathArray = fullPathArray.slice(0,4);
-            var basePath = basePathArray.join('/');
+      // Get the base path for the course web by extracting 'courses' + courseName + quarter
+      var fullPathArray = window.location.pathname.split('/');
+      var basePathArray = fullPathArray.slice(0,4);
+      var basePath = basePathArray.join('/');
 
-            // CSS files to load
-            var cssSources = [
-               '/site/css/bootstrap.min.css',
-               '/site/css/main.css',
-            ];
+      // CSS files to load
+      var cssSources = [
+        '/site/css/bootstrap.min.css',
+        '/site/css/main.css',
+      ];
 
-            // Javscript files to load
-            var jsSources = [
-                '/site/js/jquery.min.js',
-                '/site/js/bootstrap.min.js',
-                '/site/js/nav-bar.js',
-                '/site/js/footer.js'
-            ];
+      // Javscript files to load
+      var jsSources = [
+        '/site/js/jquery.min.js',
+        '/site/js/bootstrap.min.js',
+        '/site/js/nav-bar.js',
+        '/site/js/footer.js'
+      ];
   
-            // Include the script that will load the CSS & Javscript files
-            document.write("<script src=\'" + basePath + "/site/js/load-sources.js\'><\/script>");
+      // Include the script that will load the CSS & Javscript files
+      document.write("<script src=\'" + basePath + "/site/js/load-sources.js\'><\/script>");
     </script>
 
   </head>
 
   <body>
     <header class="site-header">
-        <!-- Javascript will load the navigation bar code here. -->
+      <!-- Javascript will load the navigation bar code here. -->
     </header>
       
     <div class="container">
-        
-        <!-- Use this navigation box as desired on some or all pages to provide navigation links 
-             in addition to the top menu. -->
-        <div class="nav-box">
-            <p id="nb1-header" class="nav-box-header">General</p>
-            <nav>
-            <ul aria-labelledby="nb1-header">
-                <li><a href="">Link 1</a></li>
-                <li><a href="">Link 2</a></li>
-            </ul>
-            </nav>
-            <p id="nb2-header" class="nav-box-header">Communications</p>
-            <nav>
-            <ul aria-labelledby="nb2-header">
-                <li><a href="">Link 3</a></li>
-                <li><a href="">Link 4</a></li>
-            </ul>  
-            </nav>
-            <p id="nb3-header" class="nav-box-header">Resources</p>
-            <nav>
-            <ul aria-labelledby="nb3-header">
-                <li><a href="">Link 5</a></li>
-                <li><a href="">Link 6</a></li>
-            </ul>                  
-            </nav>
-        </div>
-    
-        <!-- Begin home page content -->
-        
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-            mollit anim id est laborum.</p>
-
-        <h2 id="general-information">General information</h2>
-
-        <ul>
-          <li>Staff: </li>
-          <li>Time and Location: </li>
-          <li><a href="https://canvas.uw.edu/">Canvas</a></li>
+      
+      <!-- Use this navigation box as desired on some or all pages to provide navigation links 
+           in addition to the top menu. -->
+      <div class="nav-box">
+        <p id="nb1-header" class="nav-box-header">General</p>
+        <nav>
+        <ul aria-labelledby="nb1-header">
+          <li><a href="">Link 1</a></li>
+          <li><a href="">Link 2</a></li>
         </ul>
-        
-        <!-- End home page content -->
+        </nav>
+        <p id="nb2-header" class="nav-box-header">Communications</p>
+        <nav>
+        <ul aria-labelledby="nb2-header">
+          <li><a href="">Link 3</a></li>
+          <li><a href="">Link 4</a></li>
+        </ul>  
+        </nav>
+        <p id="nb3-header" class="nav-box-header">Resources</p>
+        <nav>
+        <ul aria-labelledby="nb3-header">
+          <li><a href="">Link 5</a></li>
+          <li><a href="">Link 6</a></li>
+        </ul>                  
+        </nav>
+      </div>
+    
+      <!-- Begin home page content -->
+      
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+        mollit anim id est laborum.
+      </p>
+
+      <!-- Edit main page subtitle -->
+      <h2 id="general-information">General information</h2>
+
+      <ul>
+        <li>Staff: </li>
+        <li>Time and Location: </li>
+        <li><a href="https://canvas.uw.edu/">Canvas</a></li>
+      </ul>
+      
+      <!-- End home page content -->
 
     </div>
       

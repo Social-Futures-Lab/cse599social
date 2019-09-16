@@ -2,11 +2,15 @@
 // The basePath must be defined on the HTML page.
 
 // Load the CSS files
-for (var i = 0; i < cssSources.length; i++) {
-  document.write("<link rel='stylesheet' type='text/css' href=\'" + basePath + cssSources[i] + "\'>");
+if (cssSources.length) {
+  for (var i = 0; i < cssSources.length; i++) {
+    document.write("<link rel='stylesheet' type='text/css' href=\'" + basePath + cssSources[i] + "\'>");
+  }
 }
 
 // Load the Javascript files
-for (var i = 0; i < jsSources.length; i++) {
-  document.write("<script src=\'" + basePath + jsSources[i] + "\'><\/script>");
+if (jsSources.length) {
+  for (var i = 0; i < jsSources.length; i++) {
+    document.write("<script src=\'" + basePath + jsSources[i] + "\'><\/script>");
+  }
 }
