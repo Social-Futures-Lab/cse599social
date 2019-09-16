@@ -1,8 +1,6 @@
 $(function(){    
-    // Assuming the nav bar is in the parent directory, 
-    // load it, make modifications, and
-    // insert it into the page header.
-    $("header").load("../site/nav-bar.html", "", function() {
+    // Load the nav bar make modifications, and insert it into the page header.
+    $("header").load(basePath + "/site/nav-bar.html", "", function() {
         
         // Attempt to set the "active" class on the currently selected item.
         // This toggles the menu item's background color.
@@ -18,12 +16,9 @@ $(function(){
             }           
         });
         
-        // Prepend '../' to each href unless the href starts with http or /.
+        // Prepend the base URL to each href
         $(".navbar-nav a[href]").attr("href", function(i, href) {
-            if ((href.startsWith('http') === true) || (href.startsWith('/') === true)) {
-                return href;
-            }
-            return "../" + href;
+            return basePath + '/' + href;
         });
         
     });
