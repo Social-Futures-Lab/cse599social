@@ -16,8 +16,11 @@ $(function(){
             }           
         });
         
-        // Prepend the base URL to each href
+        // Prepend the base URL to each href unless it's an absolute URL
         $(".navbar-nav a[href]").attr("href", function(i, href) {
+            if ((href.startsWith('http') === true) || (href.startsWith('/') === true)) {
+                return href;
+            }
             return basePath + '/' + href;
         });
         
