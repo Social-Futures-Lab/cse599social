@@ -214,19 +214,24 @@ pre > code {
 }*/
 
 .sticky {
-    position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     top: 60px;
     align-self: flex-start;
 }
 
-.title-section {
-    padding-bottom: 2em;
-}
-
 .nav-sidebar li.active a, .nav-sidebar li a:hover, .nav-sidebar li a:focus, .nav-sidebar a.nav-link.active {
     background-color: var(--teal);
-    color: white;
+    color: #4b2e83;
+    width: 100%;
+}
+
+.side-nav-1 {
+    padding-left: 20px;
+}
+
+.nav-sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
     width: 100%;
 }
 
@@ -238,4 +243,17 @@ pre > code {
 }
 .nav-link {
     padding: 0.2em 0.5em;
+}
+
+.section {
+    border-top: 3px solid #ccc;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    page-break-inside: auto;
+}
+
+.subsection {
+    margin-top: 1em;
+    border-top: 1px solid #ccc;
+    page-break-inside: auto;
 }
