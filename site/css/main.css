@@ -214,8 +214,6 @@ pre > code {
 
 .sticky {
     position: fixed;
-    top: 60px;
-    align-self: flex-start;
 }
 
 .nav-sidebar li.active a, .nav-sidebar li a:hover, .nav-sidebar li a:focus, .nav-sidebar a.nav-link.active {
@@ -254,4 +252,55 @@ pre > code {
 .subsection {
     padding-top: 4em;
     page-break-inside: auto;
+}
+
+.calendar {
+    font-size: 0.9em;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.calendar .header {
+    padding-bottom: 0;
+    font-weight: bold;
+    align-items: flex-end;
+    color: #66686B;
+    border-bottom: solid #66686B;
+    border-bottom-width: 0.5px;
+}
+
+.calendar .day, .calendar .header {
+    padding: 1em 10px;
+    margin-bottom: 0.2em;
+    margin-left: -10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.calendar .week, .calendar .date, .calendar .topic, .calendar .links, .calendar .assignments, .calendar .milestone {
+    flex-shrink: 0;
+    margin-left: 2px;
+    margin-right: 5px;
+    text-align: left;
+}
+
+.calendar .theme {
+    font-weight: bold;
+}
+
+.calendar .week {
+    flex-basis: 10ch;
+    flex-grow: 0;
+}
+
+.calendar .date {
+    flex-basis: 10ch;
+    flex-grow: 1;
+}
+
+.calendar .topic, .calendar .links, .calendar .assignments,  .calendar .milestone {
+    flex-basis: 8ch;
+    flex-grow: .9;
 }
