@@ -213,3 +213,29 @@ pre > code {
   }
 }*/
 
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 60px;
+    align-self: flex-start;
+}
+
+.title-section {
+    padding-bottom: 2em;
+}
+
+.nav-sidebar li.active a, .nav-sidebar li a:hover, .nav-sidebar li a:focus, .nav-sidebar a.nav-link.active {
+    background-color: var(--teal);
+    color: white;
+    width: 100%;
+}
+
+.nav-sidebar li a {
+    display: block;
+    width: 100%;
+    color: var(--dark-teal);
+    font-size: 11pt;
+}
+.nav-link {
+    padding: 0.2em 0.5em;
+}
