@@ -1,6 +1,9 @@
 /**
  * Reset some basic elements
  */
+html {
+  scroll-behavior: smooth; }
+
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
@@ -19,7 +22,7 @@ body {
   -moz-font-feature-settings: "kern" 1;
   -o-font-feature-settings: "kern" 1;
   font-feature-settings: "kern" 1;
-  font-kerning: normal; 
+  font-kerning: normal;
   padding-top: 20px;
 }
 
@@ -190,7 +193,7 @@ pre > code {
     margin: 10px 10px 0px 10px;
 }
 
-/* 
+/*
  * Use this as needed to adjust the spacing between the menu items across the top.
  * To avoid wrapping, the menus and course title should fit within 768 pixels.
  */
@@ -200,11 +203,11 @@ pre > code {
 }*/
 
 
-/* 
- * If the course title is long, uncomment and adjust the max-width to make it behave on a very narrow 
- * display (such as a phone display) without wrapping. 
+/*
+ * If the course title is long, uncomment and adjust the max-width to make it behave on a very narrow
+ * display (such as a phone display) without wrapping.
  */
-/*@media screen and (max-width: 400px) { 
+/*@media screen and (max-width: 400px) {
   .navbar-brand {
       width: calc(100% - 70px);
       overflow:hidden;
@@ -270,13 +273,17 @@ pre > code {
 }
 
 .calendar .day, .calendar .header {
-    padding: 1em 10px;
+    padding: 0.5em 10px;
     margin-bottom: 0.2em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-    border-bottom: #cccccc 1px dashed;
+    border-bottom: #cccccc 2px dashed;
+}
+
+.calendar .day:hover {
+    background-color: #bbbbbb;
 }
 
 .calendar .week, .calendar .date, .calendar .topic, .calendar .links, .calendar .assignments, .calendar .milestone {
@@ -289,6 +296,8 @@ pre > code {
 .calendar .theme {
     font-weight: bold;
     border-top: #4b2e83 2px solid;
+    border-bottom: #4b2e83 2px solid;
+    font-size: 20px;
 }
 
 .calendar .week {
