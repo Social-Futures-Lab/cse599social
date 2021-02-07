@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Edit page title -->
-    <title>Readings - CSE 999</title>
- 
+    <title>Schedule - CSE 440</title>
+
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
@@ -33,37 +33,256 @@
         '/site/js/nav-bar.js',
         '/site/js/footer.js'
       ];
-  
+
       // Include the script that will load the CSS & Javscript files
       document.write("<script src=\'" + basePath + "/site/js/load-sources.js\'><\/script>");
     </script>
 
   </head>
-  
+
   <body>
     <header class="site-header">
     <!-- Javascript will load the navigation bar code here. -->
     </header>
 
     <div class="container">
-          
-      <!-- Begin page content -->
-    
-      <!-- Edit main page header -->
-      <h1>Readings</h1>    
 
-      <!-- Edit main page content -->
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-        mollit anim id est laborum.
-      </p>
+      <!-- Begin page content -->
+
+      <!-- Edit main page header -->
+      <h1>CSE 440 Winter 2021: Lecture Links and Additional Readings</h1>
+
+
+	<P>
+		<h2 id="lecture_01">Lecture 01: Introduction, What is HCI?</h2>
+	      <p>
+	        Regarding our UI Hall of Fame and Shame, I thought this was funny :) <a href="https://uxdesign.cc/the-worst-volume-control-ui-in-the-world-60713dc86950">https://uxdesign.cc/the-worst-volume-control-ui-in-the-world-60713dc86950</a>
+	      </p>
+	      <P>
+	      	We don't have an official textbook for this course but the following I've heard are good overview textbooks on HCI:<BR>
+	      	- <a href="https://www.amazon.com/Human-Computer-Interaction-3rd-Alan-Dix/dp/0130461091">Human-Computer Interaction, 3rd Edition</a>
+	     	<BR>
+	     	- <a href="https://www.amazon.com/Interaction-Design-Beyond-Human-Computer/dp/1119547253/ref=asc_df_1119547253/">Interaction Design: Beyond Human-Computer Interaction, 5th Edition</a>
+	      </P>
+	 </P>     
+	      
+	 	<P>
+		<h2 id="lecture_02">Lecture 02: Design Process</h2>
+	      <p>
+	        Much of what we discussed regarding rapid ideation, design diamond, and design process is covered in the book, 
+	        <a href="https://www.amazon.com/Sketching-User-Experiences-Interactive-Technologies/dp/0123740371">Sketching User Experiences</a>, by <a href="https://www.billbuxton.com">Bill Buxton</a>. Bill is a well-known senior researcher in HCI. 
+	       </p>
+			<p>
+			The <a href="https://en.wikipedia.org/wiki/Spiral_model">Wikipedia page</a> for Spiral Model is pretty informative.
+			 There's a link on the page to the original paper where it was introduced as well. 
+			 If you're curious, on the right-hand side, there are links to other models of software engineering, including Waterfall.
+			</p>
+			<p>
+				Just for fun, here's that <a href="https://www.bloomberg.com/news/features/2017-04-19/silicon-valley-s-400-juicer-may-be-feeling-the-squeeze">Juicero article</a> by Bloomberg.
+	      </p>
+	 </P>
+	 <P>
+		<h2 id="lecture_03">Lecture 03: Ideation and Critique</h2>
+		<P>
+	      There were quite a lot of articles and links cited in the slides today, some of which I'll post again below, in addition to some new readings:
+		</P><P>
+		On the process of ideation:
+		</P><P>
+		Kanya (Pao) Siangliulue, Kenneth C. Arnold, Krzysztof Z. Gajos, and Steven P. Dow. 
+		Toward collaborative ideation at scale: Leveraging ideas from others to generate more creative and diverse ideas. 
+		In Proceedings of CSCW'15, 2015. 
+		<a href="http://iis.seas.harvard.edu/papers/2015/siangliulue15ideation.pdf">http://iis.seas.harvard.edu/papers/2015/siangliulue15ideation.pdf</a>
+		</P><P>
+		Dow et al. 
+		Parallel Prototyping Leads to Better Design Results, More Divergence, and Increased Self-Efficacy. 
+		ACM Transactions on Human-Computer Interaction (2010) vol. 17 (4). 
+		<a href="http://sing.stanford.edu/cs303-sp11/papers/ParallelPrototyping2010-final.pdf">http://sing.stanford.edu/cs303-sp11/papers/ParallelPrototyping2010-final.pdf</a>
+		</P>
+		<P>
+		On collaborative ideation and participatory design:
+		</P><P>
+		Doug Dietz’s <a href="https://www.youtube.com/watch?v=jajduxPD6H4">TEDx talk</a> on empathizing and working with children to design a new MRI machine.
+		</P><P>
+		On diverse teams: <a href="https://hbr.org/2016/11/why-diverse-teams-are-smarter">https://hbr.org/2016/11/why-diverse-teams-are-smarter</a>
+		</P><P>
+		On the topic of diverse teams, one thing I didn't bring up in class is that while having more diverse teams is 
+		better than homogeneous teams, it's certainly not a panacea. 
+		It's not feasible to have every kind of identity represented on your team, 
+		and in addition, it can be hard for minority members of the team 
+		who may feel pressured to represent everyone with their background 
+		(which is impossible). Teams still need to do the necessary user research.
+		</P><P>
+		This following chapter of the book Design Justice 
+		by Sasha Constanza-Chock has an overview of the importance of 
+		(and lack of) diversity in professional design, but also points out 
+		that it's just a first step. The chapter then describes and also 
+		points out the potential pitfalls of some user research methods 
+		such as User Personas and Participatory Design, cautioning that 
+		while designers may mean well, some of these strategies can be 
+		extractive as opposed to empowering for communities. The rest of the book is great too
+		 (and all online)! <BR>
+		 	<a href="https://design-justice.pubpub.org/pub/cfohnud7/release/2">https://design-justice.pubpub.org/pub/cfohnud7/release/2</a>
+		</P><P>
+		On "lead users", <a href="https://hbr.org/1999/09/creating-breakthroughs-at-3m">https://hbr.org/1999/09/creating-breakthroughs-at-3m</a> which is elaborated on in Eric Von Hippel's book, Democratizing Innovation. 
+			</P>
+	 </P>   
+	  <P>
+		<h2 id="lecture_04">Lecture 04: Design Principles</h2>
+		<P>
+		For more reading on design principles, I recommend <a href="https://www.amazon.com/Design-Everyday-Things-Revised-Expanded/dp/0465050654">Don Norman's book</a> that I showed in class - The Design of Everyday Things. 
+		It popularized the notion of affordances in UX design and is written for a general audience. 
+		</P><P>
+			Also thought I would mention this book that recently came out: "How Artifacts Afford The Power and Politics of Everyday Things" by Jenny Davis. It's a more academic book but has a really interesting critique and update of affordance theory to incorporate power and politics.
+			<a href="https://mitpress.mit.edu/books/how-artifacts-afford">https://mitpress.mit.edu/books/how-artifacts-afford</a>
+
+		</P>
+	</P>
+	 <P>
+		<h2 id="lecture_05">Lecture 05: Design Principles II</h2>
+		<P>
+		In today's lecture, I mentioned the book "<a href="https://www.amazon.com/Psychology-Human-Computer-Interaction-Stuart-Card/dp/0898598591">The Psychology of Human-Computer Interaction</a>" by Stu Card, 
+		Thomas Moran, and Allen Newell published back in 1983. Along with "The 
+		Design of Everyday Things" mentioned last lecture, it is one of the earlier books associated 
+		with HCI, which as you can see has a lot of roots in psychology and cognitive science. 
+		("The Design of Everyday Things" was actually titled "The Psychology of Everyday Things" 
+		in its first edition). The book goes into several more cognitive models than the ones 
+		that I pointed to in class, including <a href="https://en.wikipedia.org/wiki/GOMS">GOMS</a>.
+		</P>
+		<P>
+			I also thought I would mention in case you're curious. I didn't go into depth to explain the 
+			intuitive reasoning behind Fitt's Law. It makes sense when you think about the hand movement 
+			as a closed loop control with progressively smaller corrections towards the target. 
+			These <a href="http://web.mit.edu/6.813/www/sp18/classes/03-efficiency/#pointing_and_steering">notes</a> from a class I previously 
+			taught explain further with equations and a 
+			diagram.
+		</P>
+	</P>
+	 <P>
+		<h2 id="lecture_06">Lecture 06: User Research</h2>
+		<P>
+		Here is a sheet on needfinding from design instructors at Stanford that may be useful for you. 
+		It has some of the things I mentioned in class but also some more tips regarding 
+		types of interview styles (like the 5-why): <a href="https://hci.stanford.edu/courses/dsummer/handouts/NeedFinding.pdf">https://hci.stanford.edu/courses/dsummer/handouts/NeedFinding.pdf</a>
+		</P>
+	</P>
+	
+	<P>
+		<h2 id="lecture_07">Lecture 07: User Research II</h2>
+		<P>
+		Here's a reading on <a href="https://new-ideo-com.s3.amazonaws.com/assets/files/pdfs/news/Empathy_on_the_Edge.pdf">Design Empathy</a>
+		if you're curious about more cases. 
+		Where I've personally found design empathy 
+		helpful is as a way to break my own assumptions about 
+		something by experiencing it more viscerally, in a way that things like 
+		interviews and surveys may not make click. An example of this in my domain 
+		(social media and social computing) is the <a href="https://graphics.wsj.com/blue-feed-red-feed/ ">Red Feed Blue Feed</a> by WSJ, where you could 
+		see what a social media feed by people on different sides of the political 
+		spectrum might see.
+		For me, seeing this gave me new insight on interventions that seek 
+		to bring people closer together in a polarized environment by "bursting their bubble". 
+	</P><P>
+
+I didn't get a chance to mention it in class but I wanted to point out an example of 
+Tip #4 - "watch for workarounds" in my research. In one of my research projects, 
+we were trying to help people who deal with online harassment, such as 
+suddenly getting a ton of harassing emails or getting harassed on Twitter 
+because someone posted about them. Sometimes people would report getting like 
+100s of hateful messages a day.
+</P><P>
+We found from interviews that the most prevalent strategy people 
+used to deal with the harassment was to give their password to a 
+friend, and have that friend come in and clean things up for them. 
+And so we actually took that strategy (which is essentially a hack---it’s 
+not how you’re supposed to use passwords and leads to some privacy concerns 
+as a result) and then built a system that actually supports that behavior. 
+Here's more details on our <a href="https://medium.com/squadbox/4-things-we-learned-from-talking-to-people-who-face-harassment-research-behind-the-design-of-a28e10785319">project</a>.
+</P><P>
+
+I'll also point out that a book I mentioned before---"How Artifacts 
+Afford: The Power and Politics of Everyday Things"---has a discussion of 
+shopping carts in its introduction interestingly enough! 
+The introduction is released <a href="https://www.researchgate.net/publication/343745126_How_Artifacts_Afford_The_Power_and_Politics_of_Everyday_Things ">free online</a>.
+It goes into the history of the shopping cart briefly, 
+and talks about the politics behind its introduction and why the 
+shopping cart is the way it is today. 
+	</P>
+	</P>
     
-      <!-- End page content -->
+    
+    	<P>
+		<h2 id="lecture_08">Lecture 08: Task Analysis</h2>
+		<P>
+			Here is a nice 2-part series of blog posts on building task flows by Laura Klein, a UX designer and author of several books on UX. Task flows are another way to conduct task analysis, somewhat like the hierarchical task breakdown that we talked about. This is a bit more low-level than what we discussed in class but could be useful for you as a way to think through steps in a storyboard later on.
+<a href="https://www.usersknow.com/blog/2020/6/4/how-to-build-a-task-flow">https://www.usersknow.com/blog/2020/6/4/how-to-build-a-task-flow</a>
+</p><P>
+Returning to the IDEO video and this idea of design thinking and the design process that they popularized, here are some posts that talk more about how to use design thinking and tips on methods.
+I really like some of the writing by Christina Wodtke at Stanford on how she uses and integrates design thinking:
+<a href="https://cwodtke.medium.com/how-i-stopped-worrying-and-learned-to-love-design-thinking-f1142bab60e8">Link 1</a>.
+And some tips about how to better execute some of the methods we've described:
+<a href="https://cwodtke.medium.com/five-habits-of-design-thinking-45bb61b30393">Link 2</a>. 
+As well as her critique on how design thinking and design empathy can hide a lot of complexity:
+<a href="https://cwodtke.medium.com/designs-unsexy-middle-bits-a8cc17f0246d">Link 3</a>.
+</p>
+
+<P>
+There is so much good writing and discussion of the IDEO flavor of design thinking these days given how much it has been popularized. Christina's last blog post above hints at some of the ways it can be inappropriately applied as well as ways it obfuscates important complexity. How this can be useful for you in your future practice is as reminders of these limits of these approaches and to carry them out thoughtfully instead of reflexively to maximize success. 
+Here's a piece by Maggie Gram, a fantastic history lesson on IDEO and cautionary tale of the use of design thinking in the city of Gainesville, FL:
+<a href="https://nplusonemag.com/issue-35/reviews/on-design-thinking/">On Design Thinking</a>. 
+Another blog post by Caitlin Chase on the limits of design empathy and a call for more participatory approaches, drawing on the work by Sasha Costanza-Chock in Design Justice, which I've already pointed you to in previous readings.
+<a href="https://uxdesign.cc/beyond-empathy-in-design-f0f294c977b6">Beyond Empathy in Design</a>.
+
+In addition, Lily Irani, a professor at UCSD, has some work situating design thinking in a historical context and argues for how it was a Silicon Valley reaction against global economies and hierarchies of labor: <a href="https://catalystjournal.org/index.php/catalyst/article/view/29638/html">link</a>.
+
+
+		</P>
+		</P>
+    
+    <P>
+		<h2 id="lecture_09">Lecture 09: Sketching</h2>
+		<P>
+			In today's UI Hall of Fame and Shame, I mentioned dark patterns. There's a lot of really 
+			interesting literature on different kinds of dark patterns! 
+
+Alexis Hiniker at the UW iSchool does some research on dark patterns: <a href="https://www.alexishiniker.com/">https://www.alexishiniker.com/</a>
+</p>
+<p>
+This <a href="https://static1.squarespace.com/static/5d96a88b1171fc55023ea912/t/5e2544ff73d1bc4c305f3a08/1579500801638/Dark+Patters+Side+of+UX+Design.pdf">research paper</a> has a nice overview of different dark patterns and also discusses ethical responsibility of designers.
+<P>
+My absolute favorite is the work by Natasha Dow Schull, a 
+professor at NYU who is an anthropologist that has done ethnography 
+research looking at the design of slot machines in casinos and gambling addicts.
+ Her book "<a href="https://www.amazon.com/Addiction-Design-Machine-Gambling-Vegas/dp/0691160880">Addiction by Design</a>" on this topic is fascinating and has so much 
+ relevance to the gamification of lots of our online experiences to keep us engaged. 
+ There are several videos of talks she's given on this work online.
+
+
+		</P>
+		</p>
+		
+		 <P>
+		<h2 id="lecture_10">Lecture 10: Storyboarding</h2>
+		<P>
+			For the hall of fame and shame, I focused on the Google homepage. Here's a <a href="https://uxdesign.cc/google-how-the-biggest-search-engines-homepage-has-changed-over-the-last-20-years-3b59db931a0d">blog post</a> that details 
+			of the evolution of the homepage since 1999.
+</p>
+<P>
+Lecture 10 was about storyboarding! Here's a nice short <a href="https://medium.com/designer-recipes/star-people-how-to-storyboard-quick-and-effective-5ea812ab153d">blog post</a> on "star people",
+ including a template for creating star people.
+I shared some screenshots from this set of notes on storyboarding by Amal Dar Aziz: 
+<a href="http://spark-public.s3.amazonaws.com/hci/assignment_ressources/assignment3_storyboard_notes.pdf">Link</a>.
+
+The paper I mentioned in class about important considerations for storyboarding derived from interviewing designers and conducting workshops:<BR>
+
+Khai N. Truong, Gillian R. Hayes, and Gregory D. Abowd. 2006. 
+Storyboarding: an empirical determination of best practices and effective guidelines. 
+In Proceedings of the 6th conference on Designing Interactive systems (DIS '06). 
+Association for Computing Machinery, New York, NY, USA, 12–21. DOI:https://doi.org/10.1145/1142405.1142410
+<BR>
+	<a href="https://dl.acm.org/doi/10.1145/1142405.1142410">https://dl.acm.org/doi/10.1145/1142405.1142410</a>
+
+		</P>
+		</p>
+		
 
     </div>
 
