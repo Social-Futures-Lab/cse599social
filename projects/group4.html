@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Edit page title -->
+    <title>Projects - CSE 440</title>
+ 
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- This script dynamically loads CSS and JS files from the course base directory -->
+    <!-- Only edit if you want to change the paths to your JS/CSS sources -->
+    <script>
+      // Get the base path for the course web by extracting 'courses' + courseName + quarter
+      var fullPathArray = window.location.pathname.split('/');
+      var basePathArray = fullPathArray.slice(0,4);
+      var basePath = basePathArray.join('/');
+
+      // CSS files to load
+      var cssSources = [
+        '/site/css/bootstrap.min.css',
+        '/site/css/main.css',
+      ];
+
+      // Javscript files to load
+      var jsSources = [
+        '/site/js/jquery.min.js',
+        '/site/js/bootstrap.min.js',
+        '/site/js/nav-bar.js',
+        '/site/js/footer.js'
+      ];
+  
+      // Include the script that will load the CSS & Javscript files
+      document.write("<script src=\'" + basePath + "/site/js/load-sources.js\'><\/script>");
+    </script>
+
+  </head>
+  
+  <body>
+    <header class="site-header">
+    <!-- Javascript will load the navigation bar code here. -->
+    </header>
+
+    <div class="container">
+          
+      <!-- Begin page content -->
+    
+      <!-- Edit main page content -->
+      <h1></h1>
+      <p></p>
+    
+      <h3>Problem and Solution Overview</h3>
+      <p>In our user research, we found that students from low income families face some extreme disparities and barriers to their education when compared to their more affluent counterparts. This disparity, and attempts to mitigate it, rest heavily on the shoulders of their teachers. Since the beginning of the pandemic, school districts, state governments, and philanthropic businesses alike have contributed to the students' families in order to help reduce those disparities but the tools they have provided so far do not seem to be enough.</p>
+      <p>In light of this, our group is focusing on teacher based interventions to reduce the burden that teachers take on in helping fight the disparities that exist in their environment. Disparities teachers face include low income teachers needing to spend their own money on things like gas money driving to students houses, printing costs, mailing and postage costs, and paying for internet access. We target teachers as our primary user group in efforts to make their lives easier and reduce disparities in the teaching community. <b>This, and our user research, inspired us to design a platform for teachers to quickly and easily design augmented reality environments that give their students the ability to explore in their own space.</b> </p>
+      
+      <h3>Design Research Goals, Stakeholders, and Participants</h3>
+      <p>The three specific research methods we used are contextual inquiry, surveys, and interviews. Our user interviews were conducted with an interviewer and multiple notetakers. This allowed the interviewer to focus on the participant rather than on retaining information. The survey was designed to find the positives and negatives teachers currently face with remote learning. When researching this problem our target users were public elementary school teachers who are in underfunded or underserved school districts with unreliable internet connections. We looked at teacher practices in their online classrooms to find common problems/solutions among them. We had 3 participants for interviews and 13 for surveys. Participant 1 teaches in a Spanish immersion school which is unique, primarily hispanic students in the Idaho, Boise area. Participant 1 teaches 3rd grade with children 8 - 9 years old with class size of 21 students. Participant 2 is a former 4th and 5th grade teacher and served as librarian at a school in Redmond, Washington for the past 7 years. Participant 2 is currently teaching 630 students in all grades.  Participant 3 teaches 5th grade in a well funded school district and has a positive online environment experience with her students excelling in class. This participant has kept students engaged by making the class funny, interactive, and calls on every student.</p>
+
+      <h3>Design Research Results and Themes</h3>
+      <p>We found a few interesting themes in our research. The most prevalent being that teachers are simply overwhelmed and do not have the proper resources to engage their students in low income school districts. Our participants expressed wanting to introduce  a virtual reality feature to incorporate novelty and creative outlets to their online classroom. Another theme was that while maintaining class pace, teachers had difficulty ensuring that all students were not left behind. Which is why we kept in mind two main themes when considering our design options. These two themes were incorporating a VR/AR feature and helping teachers create immersive content that engages students students with disabilities or students who are simply just struggling to focus in class.</p>
+      <p><b>Virtual Reality Feature:</b> All our teachers indicated wanting some form of virtual reality feature to make class engaging. Classes like science, math, art, and PE suffer due to online format. In an online class experience, teachers would demonstrate the actual experiment on the screen while students sit passively watching rather than participating hands on. Teachers also wished to include virtual field trips to create an engaging environment. One of participants, in particular, was successful in demonstrating success in taking her class on virtual field trips.</p>
+      <p><b>Help Students with Learning Disabilities Not Get Left Behind:</b> One of our participants is an elementary school teacher with 5-10 students with learning disabilities. When asked about students with learning disabilities she said, “I have to make the class move fast, some kids will get left behind. If I didn’t make the class move fast, everyone would fall behind so these 5-10 students who can't keep up...I can’t do anything for them.” Even without the struggles of a COVID-19 school environment for learning disabled students struggle and really need special attention to succeed. School environment is designed for people without learning disabilities, which puts students with learning disabilities such as ADHD or dyslexia at a disadvantage that teachers are not given the proper tools to allow them to learn the material and succeed.</p>
+
+
+     <h3>Proposed Design</h3>
+
+     <p>Due to the nature of working with teachers from underserved communities, we saw that cost was a significant constraint. As such, our initial designs all centered around creating websites to crowdsource resources for teachers or recruit volunteers but after user research we found that teachers needed something to augment their students' experiences at home.  </p>
+
+     <figure>
+      <img src="img/group4s1.png" width=600><BR>
+      <figcaption>Figure one shows how the teacher might design and send the augmented reality environment to a student. </figcaption>
+    </figure> 
+
+    <figure>
+      <img src="img/group4s2.png" width=600><BR>
+        <figcaption>Figure 2 shows a full use case where a teacher takes their student on a field trip using the augmented reality environment.  </figcaption>
+    </figure> 
+
+      <!-- End page content -->
+
+    </div>
+
+    <footer class="site-footer">
+    <!-- Javascript will load the footer code here. -->
+    </footer>
+
+  </body>
+
+</html>

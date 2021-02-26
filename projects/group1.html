@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Edit page title -->
+    <title>Projects - CSE 440</title>
+ 
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- This script dynamically loads CSS and JS files from the course base directory -->
+    <!-- Only edit if you want to change the paths to your JS/CSS sources -->
+    <script>
+      // Get the base path for the course web by extracting 'courses' + courseName + quarter
+      var fullPathArray = window.location.pathname.split('/');
+      var basePathArray = fullPathArray.slice(0,4);
+      var basePath = basePathArray.join('/');
+
+      // CSS files to load
+      var cssSources = [
+        '/site/css/bootstrap.min.css',
+        '/site/css/main.css',
+      ];
+
+      // Javscript files to load
+      var jsSources = [
+        '/site/js/jquery.min.js',
+        '/site/js/bootstrap.min.js',
+        '/site/js/nav-bar.js',
+        '/site/js/footer.js'
+      ];
+  
+      // Include the script that will load the CSS & Javscript files
+      document.write("<script src=\'" + basePath + "/site/js/load-sources.js\'><\/script>");
+    </script>
+
+  </head>
+  
+  <body>
+    <header class="site-header">
+    <!-- Javascript will load the navigation bar code here. -->
+    </header>
+
+    <div class="container">
+          
+      <!-- Begin page content -->
+    
+      <!-- Edit main page content -->
+      <h1>Helping Chinese Immigrants Get Ahead(set) In the Hospital</h1>
+      <p>Contributors: Eric Chan,  Linda Do,  Mayki Hu, George Zhang</p>
+    
+      <h3>Problem and Solution Overview</h3>
+
+      <p>The healthcare system is confusing enough for English speakers, from filling out paperwork to understanding what all the professionals have to say to us. For immigrants who speak little to no English, this can be a reason to not receive the healthcare they need if translation assistance isn't present. Additionally, on-site translators may be limited or sometimes aren’t able to show up. While many translation applications do exist nowadays, none are created specifically for healthcare use, but rather general everyday quick translations.</p>
+      <p>Our goal is to allow a patient to be able to understand and communicate with medical staff by providing various translation services. We decided to focus on middle-aged (40-60 year old) Chinese-speaking immigrants in particular as our target group. After coming up with several designs, our final design was a headset that provides live translation via translation tools or a human translator. This headset can be used to aid communication with medical staff during medical visits. The headset models the human-human interaction of communication which would be simpler than a phone/tablet app. By using a headset, the interface the wearer has to learn is just a few buttons rather than having to learn a new platform like an app making it easier to use.</p>
+      
+      <h3>Design Research Goals, Stakeholders, and Participants</h3>
+      
+      <p>For our stakeholders, we have Chinese immigrants ages 40 to 60 going to the hospital, their family members, as well as medical staff. For our research, we decided to focus on the Chinese immigrants ages 40 to 60 as they’ll be the direct users of our solution. To better understand our target audience, we employed two design research methods. The first design research method we will use is interviews. In these interviews, we asked participants about ways they have communicated with doctors, how effective those modes of communication were, as well as setbacks and difficulties. The second design research method we used is directed storytelling. Being how we are not a part of the user group we selected, it would be important for us to hear the stories of people within our targeted user group who have had these experiences. Instead of having a specific script of questions to ask per se, we asked about the experience of going to see the doctor and see what we can learn and gather from the stories recorded without having preconceived biases. These two methods we deemed best suited for our project for a couple of reasons. The main reason is that because of the current pandemic, and in-person interactions or observations are not possible, meaning we cannot simply go to a hospital to watch patients go through the experience. Since we are also limited to just a week for our research study, we do not have the time for anything long term like diary studies.</p>
+      <p>In terms of our interviewees, we were lucky enough to receive three requests to conduct our design research. Mr. H is 59 years old and has been living in the U.S for 31 years now. He speaks Cantonese. He can speak Mandarin but has a heavy accent local to his province; this can make Mandarin-Mandarin communication difficult. He has limited understanding of English and speaks very limited English. One unique thing about Mr. H is that he is hesitant to see a doctor without help and he has a consistent and outstanding workout routine.  As a result, he will not see a doctor without a translator, as it is difficult to communicate (and his workout keeps him in good health). Next is Mr. and Mrs. M are both 53 years old and have been living in the U.S. for 31 years. They mainly speak Taishanese at home but also speak Cantonese. The interview was conducted using a mix of both dialects. Both Mr. and Ms. M have a basic understanding of commonly used words in English, and speak limited English. One unique thing about Mr. and Mrs. M is that they have a child who is a nurse, and that helps them have a better understanding when visiting the doctor. The third participant is Mrs. P. Mrs P, who did not disclose her age, has been living in the US for 30 years now. She speaks mainly Mandarin but can also speak Cantonese. She has some knowledge of english phrases and words and can understand simple sentences, but cannot hold a solid conversation in just english. At best she can speak “chinglish”, a mixture of chinese and english. One unique thing about Mrs. P’s situation is that her husband as well as both of her children are fluent in English. Therefore, Mrs P always relies on her husband whenever she goes to the doctor, which makes it unique compared to Mr. H and Mr and Mrs. M. We chose these three participants because they fit our brainstormed demographic of being between the ages of 40 and 60 as well as speaking limited or no English in hopes of understanding their experience going to the doctor and resolving the problems they face due to their limited English.</p>
+
+      <h3>Design Research Results and Themes</h3>
+
+      <p>We wanted to create a design which our users desire, so it is essential to identify and keep in mind common themes from our research results as we are designing. We have identified and listed a few below. These are the most prominent themes in common amongst all participants we spoke to:</p>
+
+      <ul>
+        <li><b>Hard to do a doctor’s appointment on their own / Usually accompanied by someone on their visit</b></li>
+        <ul>
+          <li>All participants we have found were almost always accompanied by someone to translate, be it a translator assigned to them by the hospital / clinic or a family member. It was rather difficult to visit the doctor alone, sometimes impossible altogether.</li>
+        </ul>
+        <li><b>Specific medical terminology is hard to understand / a niche set of vocabulary</b></li>
+        <ul>
+          <li>All participants spoke of the fact that even if words were translated, really niche or new medical terminology which is translated can be hard to understand.</li>
+        </ul>
+        <li><b>Cannot seem to find a doctor that speaks Chinese Mandarin / Cantonese</b></li>
+        <ul>
+          <li>An interesting find was all participants mentioned that their primary physicians did not speak their language, let alone dialect. They do not interact much with doctors who do speak Chinese.</li>
+        </ul>
+        <li><b>Incorrect understanding of translation can happen unless the patient is very cautious</b></li>
+        <ul>
+          <li>All participants noted that conversing and understanding what the doctor was saying often relied on the participant themself to clarify any confusing points. We believe that this is because of an assumption that “translators are enough.” Participants always had to be on their toes.</li>
+        </ul>
+        <li><b>Translation tools are familiar to participants and used as a last resort</b></li>
+        <ul>
+          <li>All participants were familiar with translation tools, like Google Translate. Translation tools provided a last ditch effort to communicate with their doctor, especially if a translator was not available.</li>
+        </ul>
+        <li><b>Fully understanding next steps with doctor (if needed) before leaving is a priority</b></li>
+        <ul>
+          <li>All participants pointed out that making sure their aftercare steps were fully understood before leaving is very important. No one should have to leave without fully understanding their next steps to staying healthy!</li>
+        </ul>
+        <li><b>Had to schedule appointment around translator / family member’s availability</b></li>
+        <ul>
+          <li>All participants mentioned that if they were accompanied by a translator, be it a designated translator or a family member, scheduling around a translator’s availability was an issue. If a translator does not arrive, the appointment would sometimes be rescheduled.</li>
+        </ul>
+     </ul>
+
+     <p>Design research is a very important process. Evaluating user research to debrief and determine common trends is included in that important process! We would like to thank our participants so much for their valuable time and input.  :)</p>
+
+     <h3>Proposed Design</h3>
+
+     <p>We initially came up with three potential technology solutions for our issue: a headset, phone/tablet application, and a smart whiteboard. The headset, owned by the user, would allow the user to just talk, either on a call to a translator on the other end of the line or to a translation tool in either case the translation would come out over a speaker to the doctor and vice versa from the doctor speaking to the patient. For the tablet/phone, this would be a device provided by the hospital that would have applications to help the patient figure things out like how to fill out the check-in form as well as have translation tools so the patient and doctor can type what they want to say and have it be translated for them. The whiteboard would be a similar premise, where patients could write down what they want to say or even speak and have it be translated for the doctors.</p>
+     <p>When it comes down to it, the main goal of what we wanted and what we learned from our interviewees was that Chinese patients between the ages of 40 and 60 just wanted a way to be able to communicate and understand medical staff. We also learned that all of our interviewees really enjoyed being able to have someone there as a translator to talk to. It seemed that still being able to just speak naturally was the preferred communication choice over writing or typing. So knowing this, the decision to focus on the headset was made. By having this wearable device, patients are free to just talk normally like so (figure 1):</p>
+
+     <figure>
+      <img src="img/group1s1.png" width=400<BR>
+      <figcaption>Figure 1: Headset allows conversation.</figcaption>
+    </figure> 
+
+    <p>And by just having this communication method established, that alone is enough to help our patients with the whole hospital visiting experience. </p>
+    <p>When listening to our interviewees experiences, we found that participants have used a mix of in-person translators as well as translation tools to help aid them in their hospital visits. It was agreed upon that having someone there in person, whether it was a professional translator or even just a loved one was preferable over a tool, but it was also understood that there won’t always be a physical person available to translate for them. Because of this, we decided that within our headset, we would allow both being able to call a physical person or just use a tool to help translate.</p>
+
+    <figure>
+      <img src="img/group1s2.png" width=400><BR>
+      <figcaption>Figure 2: Headset design and features. </figcaption>
+    </figure> 
+
+    <p>As you can see in our initial design for the headset (figure 2), while there are many features like noise cancellation and having a microphone and speaker to allow for translation input and output, the overall interface for the user is quite simple. At the bottom of figure 2, you see that there would be a button that allows the user to switch between calling a translator or just using the built in translator within the headset. But once the user established which translation mode they would like to use, they are free to talk in Chinese to any staff and just have the translation begin.</p>
+    <p>The hospital process can already be a confusing one for native english speakers, meaning that more Chinese immigrants who don’t speak english, the process can seem like an insurmountable mountain. We just want to be able to help make that mountain become a lot more scalable and we believe that this headset can help.</p>
+     
+
+      <!-- End page content -->
+
+    </div>
+
+    <footer class="site-footer">
+    <!-- Javascript will load the footer code here. -->
+    </footer>
+
+  </body>
+
+</html>

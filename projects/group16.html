@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Edit page title -->
+    <title>Projects - CSE 440</title>
+ 
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- This script dynamically loads CSS and JS files from the course base directory -->
+    <!-- Only edit if you want to change the paths to your JS/CSS sources -->
+    <script>
+      // Get the base path for the course web by extracting 'courses' + courseName + quarter
+      var fullPathArray = window.location.pathname.split('/');
+      var basePathArray = fullPathArray.slice(0,4);
+      var basePath = basePathArray.join('/');
+
+      // CSS files to load
+      var cssSources = [
+        '/site/css/bootstrap.min.css',
+        '/site/css/main.css',
+      ];
+
+      // Javscript files to load
+      var jsSources = [
+        '/site/js/jquery.min.js',
+        '/site/js/bootstrap.min.js',
+        '/site/js/nav-bar.js',
+        '/site/js/footer.js'
+      ];
+  
+      // Include the script that will load the CSS & Javscript files
+      document.write("<script src=\'" + basePath + "/site/js/load-sources.js\'><\/script>");
+    </script>
+
+  </head>
+  
+  <body>
+    <header class="site-header">
+    <!-- Javascript will load the navigation bar code here. -->
+    </header>
+
+    <div class="container">
+          
+      <!-- Begin page content -->
+    
+      <!-- Edit main page content -->
+      <h1>It’s a Better Way to Move to America</h1>
+      <p>Contributors: Akif Ahmed, Isabelle Donsbach, Truc Nguyen, Ken Aragon</p>
+    
+      <h3>Problem and Solution Overview</h3>
+
+      <p>Moving to the United States from another country is a difficult experience. Immigrants experience culture shock to challenges with language barriers. Amongst all the different challenges, finding long term housing is one of the most difficult ones. Immigrants need to find a place to live before getting to the United States. While searching for housing, questions regarding things such as mortgages, loans, and location safety often come up. </p>
+      <p>However, information regarding this can often be difficult to understand or find for one’s specific situation, but on top of this, many searching for housing in the U.S. from another country that don’t know crucial information often don’t realize it, causing them to not be aware of a financial or legal requirement until it’s too late. Language barriers also make gathering information even more difficult. </p>
+      <p>As a result of all these obstacles, the process of searching for housing in the U.S. from abroad is often unnecessarily difficult and time consuming. Our interactive application will help future U.S. residents navigate the transition process better than the current means. With our application, we have features to search housing listings in a better way, connect with communities and individuals, find relevant and complete information, and translate documents and information.</p>
+
+      <h3>Design Research Goals, Stakeholders, and Participants</h3>
+
+      <p>In order to fully understand the various hurdles immigrants face when coming to the U.S., we determined that personal interviews over Zoom would be necessary. We reached out and contacted many groups on Facebook, Reddit, and immigrant organizations in Seattle in search of a diverse group of participants. We ended up interviewing three immigrants - Participant A, from Kenya, Participant B, a recent immigrant from Vietnam, and Participant C, also from Vietnam, for about 30 minutes each. During the interviews, we asked a series of open-ended questions, inquiring about the process of finding housing, their personal needs and goals, as well as their general experience moving to the United States. We also interviewed Participant D, a professional landlord operating in Seattle for the last 20 years. We asked him a variety of questions involving the other side of finding housing - searching for tenants online, preparing paperwork, and other similar tasks. Through these interviews, we uncovered multiple issues that were previously unknown to us.</p>
+
+      <p>In addition to interviews, we also sent out a survey including questions regarding some of the issues we uncovered during our interviews, such as the extent to which respondents had difficulties finding housing or acquiring credit. This survey was distributed over immigrant Facebook groups and was optionally anonymous, but unfortunately we were limited in our responses. </p>
+
+      <h3>Design Research Results and Themes</h3>
+
+      <p>Through our user research, we were able to draw several insights that would not have been found at just a surface level; in particular, a huge takeaway was that nearly all our participants utilized their interpersonal connections while looking for housing, finding information, finding temporary housing, and seeking general help with the housing search process. Two of our participants went into detail about how it was local communities that helped them start to get settled into the U.S. For one interviewee, it was a church community that helped his family initially secure housing when they were struggling to due to financial barriers. For another interviewee, it was his family friends and their advice and recommendations based on their own experiences moving to the U.S. that let his family find a good housing option when they first moved. A struggle we found across the board through our research was the language barrier.</p>
+      <p>Language differences posed difficulties for all of our participants in their housing searches; reading and signing documents could often be challenging because of this. Moreover, language differences also made it difficult for those who have English as their second language to communicate with landlords and agents within the U.S or engage with housing posts on online platforms such as Facebook Marketplace.</p>
+      <p>The most commonly desired task we found that our participants wanted to be able to do in their housing searches was to be able to find information related to their ability to find housing based on their immigration status, job status, credit. Etc. This information is often very confusing and different depending on the individual situation. Related to this, many in our target group need help with money in terms of loans, mortgages, and credit scores; information related to this can be difficult to understand, especially with language barriers. A problem we found through our interviews is that some immigrants don’t know about crucial details such as the need for a credit score for certain housing options at all, which can add other unexpected obstacles to the housing search.</p>
+      <p>We aim to address all these themes of the helpfulness of communities, the challenges from language barriers, and the desire for transparent, relevant information through our design.</p>
+
+     <h3>Proposed Design</h3>
+
+     <p>Our proposed solution is an interactive app that would allow users to get information about housing from a centralized source that is organized and easy to use. We hope to provide translation services, financial information, community, and safety/security information. When we conducted our research, we found that the most difficult part of finding housing for many of our participants was figuring out financial requirements, because immigrants often face a lot of challenges and barriers financially. Another issue many participants expressed is a language barrier, especially when it comes to reading and working with official documents. These conclusions have led us to the main two tasks we have focused on so far: understanding financial and general information to rent or buy housing in the U.S., and translating and understanding documents and information.</p>
+     <p>When we talk to our target group, they often discuss relying on others they know from their community or in online discussion forums, so we wanted to incorporate this style of collaboration for information that our user group would already be accustomed to. It can be difficult to find these online communities, especially more niche cultural ones, so we want to add functionality to help people find others living in their state (or the state they want to move to) and from their communities easily. This can be seen in the sketch below, where people can choose options to find their community before asking or answering questions about finding housing.</p>
+
+     <figure>
+      <img src="img/group16s1.png" width=500><BR>
+    </figure> 
+
+    <p>Below is an image from a storyboard showing the translation feature that would provide translation of documents. If they are still confused by the translation or by the contents of the document, then they will be able to click a button to talk to someone for further explanation and assistance. Official documents often contain a lot of confusing information that is hard to understand even for native speakers, so the content can still be misunderstood after translation, which is why this feature is important.</p>
+
+    <p>The last feature we would like to include is something that tackles security and safety issues, as we found during our research that immigrants are targeted by scamming due to being new to the community as well as due to language barriers. We would like to implement this as a feature used while searching for housing in the form of community ratings on safety of neighborhoods, average housing pricing in areas, neighborhood school systems, etc. In this way community members would help each other find safe options and secure housing in the areas they are looking.</p>
+
+    <figure>
+      <img src="img/group3s2.png" width=500><BR>
+    </figure> 
+
+      <!-- End page content -->
+
+    </div>
+
+    <footer class="site-footer">
+    <!-- Javascript will load the footer code here. -->
+    </footer>
+
+  </body>
+
+</html>
