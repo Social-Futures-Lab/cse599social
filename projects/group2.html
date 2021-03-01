@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Edit page title -->
+    <title>Projects - CSE 440</title>
+ 
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- This script dynamically loads CSS and JS files from the course base directory -->
+    <!-- Only edit if you want to change the paths to your JS/CSS sources -->
+    <script>
+      // Get the base path for the course web by extracting 'courses' + courseName + quarter
+      var fullPathArray = window.location.pathname.split('/');
+      var basePathArray = fullPathArray.slice(0,4);
+      var basePath = basePathArray.join('/');
+
+      // CSS files to load
+      var cssSources = [
+        '/site/css/bootstrap.min.css',
+        '/site/css/main.css',
+      ];
+
+      // Javscript files to load
+      var jsSources = [
+        '/site/js/jquery.min.js',
+        '/site/js/bootstrap.min.js',
+        '/site/js/nav-bar.js',
+        '/site/js/footer.js'
+      ];
+  
+      // Include the script that will load the CSS & Javscript files
+      document.write("<script src=\'" + basePath + "/site/js/load-sources.js\'><\/script>");
+    </script>
+
+  </head>
+  
+  <body>
+    <header class="site-header">
+    <!-- Javascript will load the navigation bar code here. -->
+    </header>
+
+    <div class="container">
+          
+      <!-- Begin page content -->
+    
+      <!-- Edit main page content -->
+      <h1>Virtual Visitor: A New and COVID Friendly Way to Meet Your Future Furry Friend</h1>
+      <hr>
+      <p>Patrick Render, <a href="mailto:rendep@uw.edu">rendep@uw.edu</a></p>
+      <p>Joonyoung Chong (Joon), <a href="mailto:joon0025@uw.edu">joon0025@uw.edu</a></p>
+      <p>Lizzie Gossman, <a href="mailto:gossmane@uw.edu">gossmane@uw.edu</a></p>
+      <p>Yanjie Niu, <a href="mailto:niuy@uw.edu">niuy@uw.edu</a></p>
+      <hr>
+      <br>
+    
+      <h3>Problem and Solution Overview</h3>
+
+      <p>Small local animal shelters have been impacted heavily due to COVID-19. Unlike the big chains, small local animal shelters lack infrastructure and resources and have issues with 1) facilitating interaction between adopters and animals and 2) holding fundraising events and receiving donations during the pandemic. We decided to use Virtual Reality technology to help resolve these issues. Through the introduction of VR, potential adopters will be able to interact with animals through an immersive virtual experience. They will be able to see it, hear it, and play with it, simulating the in-person interaction potential adopters desire in the adoption process. VR interactions can be entertaining for people not looking to adopt and insightful for those who are. By hosting an animal party in a virtual space, shelters will be able to provide diverse groups of people with the opportunity to experience interactions with animals. Virtual fundraising events also can be hosted by shelters to attract widespread donations or reach fundraising goals.</p>
+      
+      <h3>Design Research Goals, Stakeholders, and Participants</h3>
+      
+      <p>For our research methods, we chose to perform interviews with shelter workers and created a survey for potential and previous adopters. Interviews allowed us to get 1:1 time with small local shelter workers to ask questions and gather more in-depth information by asking follow-up questions in real-time. We were able to connect with workers at 3 different shelters - Emerald City Pet Rescue, Motley Zoo, and Seattle Area Feline Rescue - via Zoom and gain firsthand personal accounts of experiences, opinions, attitudes, and perceptions. Also, we chose a survey because it allowed us to efficiently collect information from large samples of respondents, both people who already adopted an animal during COVID-19 and who are considering doing so, in a short time frame. The participants of this survey were sources through each member of our group's own social circles, social media, and internet forums.</p>
+
+      <h3>Design Research Results and Themes</h3>
+
+      <p>Through our design research, we found that local small animal shelters lack fundings and staff to support their businesses, especially during the pandemic when the adoption cases are increasing but fund-raising activities could not be operated. Also, due to short staffing and the volume of inquiries, it was hard for these small shelters to get into contact and communicate with adoption applicants quickly. Last but not least, adopters believe the most important factor in pet adoption is interaction time with the animal. COVID-19 has limited this, but people still expected more interactions with a pet prior to adoption.</p>
+      <p>Based on the design research, we further identified the specific disparities between the small shelters and the big chains stated in our theme. The big pain points for the small shelters are understaffing and lack of financial support. With a goal to reduce this disparity and support small local animal shelters, we started to find tasks essential to our solution design for our stakeholders and conducted a task analysis.</p>
+      <p>Some selected main tasks we identified are as follows:</p>
+      <ol>
+        <li>Small shelters need to find easy and discoverable routes for donations.</li>
+        <li>Small shelters need to facilitate interactions between adoption applicants and animals before making a long-term adoption commitment.</li>
+     </ol>
+
+     <p>After analyzing the difficulties and importance of these tasks, we started to propose feasible technical solutions.</p>
+
+     <p>Design research is a very important process. Evaluating user research to debrief and determine common trends is included in that important process! We would like to thank our participants so much for their valuable time and input.  :)</p>
+
+     <h3>Proposed Design</h3>
+
+     <p>Our proposed solution is a VR space for local animal shelters. This space can be used as a catalog for local shelters to offer to potential adopters to browse, interact, and learn more about animals they are interested in. It can also be used by the local shelters to host fundraising events such as playing with puppies, animal training lessons, or a virtual petting zoo. Through this space, the health and safety of shelter workers, adopters, and animals are all secure, and the outreach capabilities are nearly limitless. The first storyboard below shows that our system would allow adopters to view animal interactions to make the adoption process more immersive. Our second storyboard shows how a VR space can serve as a fundraising opportunity for local shelters.</p>
+
+     <figure>
+      <img src="img/group2s1.png" width=600><BR>
+      <figcaption>Storyboard 1: Allows adopters to view animal interactions to make the adoption process more immersive.</figcaption>
+    </figure> 
+
+    <figure>
+      <img src="img/group2s2.png" width=600><BR>
+      <figcaption>Storyboard 2: How a virtual space can serve as a fundraising opportunity for local shelters. </figcaption>
+    </figure>      
+
+      <!-- End page content -->
+
+    </div>
+
+    <footer class="site-footer">
+    <!-- Javascript will load the footer code here. -->
+    </footer>
+
+  </body>
+
+</html>

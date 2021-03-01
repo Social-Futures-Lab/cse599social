@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Edit page title -->
+    <title>Projects - CSE 440</title>
+ 
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- This script dynamically loads CSS and JS files from the course base directory -->
+    <!-- Only edit if you want to change the paths to your JS/CSS sources -->
+    <script>
+      // Get the base path for the course web by extracting 'courses' + courseName + quarter
+      var fullPathArray = window.location.pathname.split('/');
+      var basePathArray = fullPathArray.slice(0,4);
+      var basePath = basePathArray.join('/');
+
+      // CSS files to load
+      var cssSources = [
+        '/site/css/bootstrap.min.css',
+        '/site/css/main.css',
+      ];
+
+      // Javscript files to load
+      var jsSources = [
+        '/site/js/jquery.min.js',
+        '/site/js/bootstrap.min.js',
+        '/site/js/nav-bar.js',
+        '/site/js/footer.js'
+      ];
+  
+      // Include the script that will load the CSS & Javscript files
+      document.write("<script src=\'" + basePath + "/site/js/load-sources.js\'><\/script>");
+    </script>
+
+  </head>
+  
+  <body>
+    <header class="site-header">
+    <!-- Javascript will load the navigation bar code here. -->
+    </header>
+
+    <div class="container">
+          
+      <!-- Begin page content -->
+    
+      <!-- Edit main page content -->
+      <h1>Sextension: Working Towards A Safer Online Sex Community</h1>
+      <p>Contributors: Juan Martinez, Milla Zuniga, Yuxiao Shi, Autumn Liu</p>
+    
+      <h3>Problem and Solution Overview</h3>
+
+      <p>When given the task to design a new product to aid a group of people facing a disparity, our group of HCI students didn’t know where to start. After multiple sessions of brainstorming, we ultimately decided to focus on a design geared towards sex workers. Sex workers face various forms of stigmitization and criminalization, often through the form of violence. The social and legal conditions set restrict many sex workers options for safety and aid. We initially started with creating a physical design for sex workers to protect themselves, but due to the Coronavirus pandemic, we had to take a different approach. The pandemic has forced many people to move online and in order to work with this shift, we chose to move our focus online as well. The goal of our project is to make the online sex industry safer and more accessible in an effort to expand the community and reduce the physical violence and criminalization of in-person sex workers. Our proposed solution is a Google Chrome extension that will help online workers keep track of existing and potential clients and also protect them while online with VPN software.</p>
+      
+      <h3>Design Research Goals, Stakeholders, and Participants</h3>
+
+      <p>Since our project is focused on creating a safe and accessible sex working environment, our target user group is sex workers. Other stakeholders that we considered in our design include potential future sex workers and clients, and our target participants were online sex workers, such as cam workers and OnlyFans creators. The goal of our research was to gain more insight to problems that online sex workers face, such as relating to security or privacy, so we reached out to our target participants online, primarily focusing on specific communities and individuals via email, discussion boards, and social media. One of our main research methods was <b>surveys</b>, which allowed us to gain information about our target user group quickly. Since the surveys would be anonymous, it allows us to gain more information as people may be more compelled to be honest and speak comfortably. Surveys are also quick and easy for people to fill out and are easily accessible. Our other research method was <b>interviews</b>, which would allow us to ask specific questions when given information, data, or personal anecdotes from a participant. We received survey responses from 6 participants of various backgrounds, including both online and in-person sex workers. Since they all had different reasons for joining the sex work industry, this proved to be a good sample size to base our initial research on. However, we did not have any willing interview participants, so we turned to using sex worker forums and discussion boards as an observational study to back up our survey research.</p>
+      <h3>Design Research Results and Themes</h3>
+
+      <p>As mentioned, the combination of the pandemic and working with sex workers proved to be difficult for outreach and only received six responses to our survey. Of the six responses to our survey, three of the participants were solely online sex workers, one was primarily online with some in-person work, one was primarily in-person with some online sex work and one was primarily in-person.</p>
+      <P>For the participants that answered with “solely online” sex work, all three started out sex work exclusively online and feel comfortable with online sex work, with an average comfort level of 4.7/5. However, the average rating of privacy and security concerns was a 3.7/5. The “primarily online with some in-person” participant and the “primarily in-person with some online” participant had similar ratings to each other. They both had a higher 4.5/5 comfort level with online sex work but had a much lower concern for privacy and security compared to the three “exclusively online” participants with a 2/5. The “exclusively in-person” participant showed that they felt extremely unconcerned with online privacy and security with a 5/5. This could be due to the fact that they generally don’t work online and stated that once the Coronavirus pandemic is over, they won’t go back to any online work. </P>
+      <p>One of the biggest themes from our research was regarding security and privacy. Outside of the “in-person” participant, all of our responses had a rating of 3 or lower, indicating some level of discontent with online security. When researching forums for the best ways to be secure when working online, we often saw a recommendation for workers to use VPNs, private browsers, or another form of security tool. However, when reading through our responses, we found a common theme of hiding any public information, but none of our participants had any further security beyond public anonymity. When being asked “what do you want to see improved with online work,” one participant working online answered “ways to make content more secure...personal info more hidden… [for example,] more accessible ways for security tools or VPN.” </p>
+      <p>Gaining clientele online was another expressed concern from our participants. The average rating of how easy it is to maintain an online presence and gain cliente was only a 3.3/5. However, despite this, a few participants mentioned how they prefer online work for the comfort and flexibility in their job. </p>
+      <p>Online payment methods was a concern for our “primarily in-person” participant. They mentioned having to pay fees on platforms and other third-party payment processors like PayPal. The risk of losing one’s account and money with third-party processors was also a concern. The participant also mentioned that banking has no fees but that the clients would have to know the name attached with the bank account, thus being counteractive with public anonymity.</p>
+
+     <h3>Proposed Design</h3>
+
+     <p>After a few cycles of iterative design, we arrived at the design of <b>browser extensions</b>, a lightweight alternative to a whole new platform or mobile application (also what gave our solution its name). The extension would provide an on/off mode for sex workers to easily separate their work life from their personal life, and be secure while doing so. Based on our research, regardless of comfort level or industry experience, none of the sex workers that responded to our survey were familiar with or used any sort of online security for protecting their privacy and data, but all expressed at least some interest in adopting better security practices. This design would be more accessible because it targets both current and future workers, allowing them to more easily protect themselves online without having to go through the process of researching and installing an entire separate software on their devices.</p>
+     <p>We had some other solution proposals along the way, including a mobile application that primarily focused on organization and client screening for sex workers. Since we went to focus more on assuring the safety of the sex workers, not the other side of the infomation inequality. Another of our solution proposals was a new online sex working platform for both the clients and the sex workers, yet as our reflection upon the potential societal implications using the Tarot Cards of Tech reveals a bigger security threat to the sex workers in terms of security breaches that could be posed by user-client interactions and multi-audience platform. However, we still considered features in those solutions to incorporate organizations and keep track of clients, since getting scammed was also another big concern from our participants. </p>
+     <p>As a result, out final design integrates a simple way for sex workers to take notes about their clients and organize their schedule in addition to keeping their work secure. The following illustrates two main features of our final proposed design.</p>
+
+     <h4>Main Feature 1: Keeping track of existing and potential clients</h4>
+     <p>The browser extension can keep a rating system (reports, comments, blacklists) for sex service providers and/or client accounts on platforms of the providers, so that whenever a user goes on such a platfrom, they can mark or report harrassments or delayed or withheld payments to reduce the likelihood of working with them in the future. Those ratings and records will be kept offline and stored locally on users’ browsers by default, but users can also choose to share them with other users from the community.</p>
+
+     <figure>
+      <img src="img/group3s1.png" width=600><BR>
+    </figure> 
+
+    <h3>Main Feature 2: Turning on working mode for VPN and online privacy</h3>
+
+    <p>When the user opens a browser window, a browser extension can easily turn on a random VPN to protect their online identity and browsing information. When a user engages in a video chat in the browser, the extension can also put on a virtual background and/or a “virtual mask” on top of the webcam to cover part of their faces and surroundings.</p>
+
+    <figure>
+      <img src="img/group3s2.png" width=600><BR>
+    </figure> 
+
+    <p>In addition to the two features above, we have come up with other ways to aids online sex work further. For example, when the user goes on a website that has “potential risk of getting scammed” according to <a href="https://www.reddit.com/r/SexWorkers/comments/hzivvb/how_to_find_a_safe_provider/">popular threads on discussion boards</a> among the sex work community, the browser extension will pop an alert, warning the user about the risk and, more importantly, different ways to reduce the risks (VPN, cryptocurrency, communities to seek help from, etc). Besides warnings, the browser could also offer insights for governmental or platform-specific policies regarding sex work, allowing the sex workers to compare various payment methods or different forms of sex work. Upon knowing penalties associated with sex work according to local legislations, some users might even reconsider their career path.</p>
+
+      <!-- End page content -->
+
+    </div>
+
+    <footer class="site-footer">
+    <!-- Javascript will load the footer code here. -->
+    </footer>
+
+  </body>
+
+</html>
