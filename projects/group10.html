@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Edit page title -->
+    <title>Projects - CSE 440</title>
+ 
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- This script dynamically loads CSS and JS files from the course base directory -->
+    <!-- Only edit if you want to change the paths to your JS/CSS sources -->
+    <script>
+      // Get the base path for the course web by extracting 'courses' + courseName + quarter
+      var fullPathArray = window.location.pathname.split('/');
+      var basePathArray = fullPathArray.slice(0,4);
+      var basePath = basePathArray.join('/');
+
+      // CSS files to load
+      var cssSources = [
+        '/site/css/bootstrap.min.css',
+        '/site/css/main.css',
+      ];
+
+      // Javscript files to load
+      var jsSources = [
+        '/site/js/jquery.min.js',
+        '/site/js/bootstrap.min.js',
+        '/site/js/nav-bar.js',
+        '/site/js/footer.js'
+      ];
+  
+      // Include the script that will load the CSS & Javscript files
+      document.write("<script src=\'" + basePath + "/site/js/load-sources.js\'><\/script>");
+    </script>
+
+  </head>
+  
+  <body>
+    <header class="site-header">
+    <!-- Javascript will load the navigation bar code here. -->
+    </header>
+
+    <div class="container">
+          
+      <!-- Begin page content -->
+    
+      <!-- Edit main page content -->
+      <img src="img/group10header.png" width=500><BR>
+      <h1>Localize: Helping Small Businesses Recapture the Market</h1>
+      <p>By Team SuS: Claudia Coulibaly, David Lee, Ethan Pyke, Larry Shan</p>
+    
+      <h3>Problem and Solution Overview</h3>
+
+      <p>Amidst the COVID-19 pandemic, local businesses have struggled to stay afloat while large, corporate companies like Amazon have seen tremendous growth. More and more consumers moved away from local options in favor of the convenience of searching and buying their products through Amazon’s shopping platform. And now, due to a lack of awareness of what other options are available, consumers are highly unlikely to purchase their products from their local businesses that desperately need their support, destroying them in the process. For example, Amazon is worth more than $1.7 trillion, with its value increasing every day. Meanwhile, since the beginning of the pandemic, an average of over 800 small businesses have closed every single day. While these hardworking civilians lost their livelihoods, Jeff Bezos, CEO of Amazon, has amassed an immeasurable fortune, exposing a clear disparity in wealth distribution in America that continues to worsen each day. Keeping these problems in mind, we would like to propose our solution – a web browser extension that allows small business owners to freely advertise their business on major online shopping platforms to increase traffic to their store as well as incentivize consumers to shop local through the built-in reward system.</p>
+      
+      <h3>Design Research Goals, Stakeholders, and Participants</h3>
+
+      <p>We sent out surveys to 33 small, local businesses in the Seattle area selling various items and products, such as jewelry stores, convenience stores, glasswork stores, arts/craft stores, toy stores, etc. Other businesses centered around services rather than products (e.g. printing services, laundromats, restaurants, etc.) were not included in our outreach. From the responses we observed, we saw that the owners operated businesses of diverse backgrounds, including women-owned businesses, black-owned businesses, long-standing businesses, newer businesses, etc. We chose to send out surveys because we wanted to contact businesses directly in a way that was quick and wouldn’t take time away from their busy lives. It was also useful in gathering information in a simple and comprehensible manner. We also created a graffiti wall google doc, to receive feedback from our community members to see what motivates potential customers. We chose this method because it allowed us to reach a broader audience and gain more insight into how the community operates.</p>
+
+      <h3>Design Research Results and Themes</h3>
+
+      <p>The survey results gave us valuable insight into the struggles of Seattle’s small businesses during the pandemic. It is worth noting that some businesses believed that they were not as negatively affected by large businesses and corporations as others, due to the exceptionally unique nature of their products. Regardless of this, however, all business owners who participated in our survey agreed that they observed a noticeable decrease in their sales during the pandemic. Additionally, they all had some form of online presence for their businesses through various websites and/or facebook pages, but most (all but one) expressed a lack of satisfaction in the effectiveness of their online presence. So from the business side, we had the common themes of being negatively affected by the pandemic through decreased sales and feeling as though their online presence could be improved in effectively reaching and inviting customers.</p>
+      <p>The inputs we received from our local community through the graffiti wall gave us further insight into the customers’ perspective regarding their shopping patterns. A common theme we saw was that many customers prioritize quickness and convenience when shopping – this leads many of them to seek Amazon and its Prime services over local options due to Amazon’s easy-to-use online shopping format and fast deliveries. However, the sentiment of wanting to support local businesses and move away from being dependent on large corporations whenever possible still remained strong in many of our respondents.</p>
+
+     <h3>Proposed Design</h3>
+
+     <p>Our proposed solution is a browser extension that takes advantage of existing major online shopping platforms and directs consumers to local alternatives of the products they are browsing. It includes a user-friendly interface that first requires small business owners to verify their businesses as part of our security measures before allowing them to list their products online for a larger audience and subsequently increase traffic to their online and physical stores. On the consumer side, when a buyer is looking at a particular product on a large online retail site like Amazon, they can easily see a list of similar products on a small pop-up window that showcases local alternatives. The extension thus allows and encourages users to buy from local businesses as well as navigate directly to the local businesses’ websites where they can also learn more about the businesses (the location of the physical stores, the story of the businesses, other products that are for sale, etc.)</p>
+     <p>We have included two storyboards below that illustrate how our proposed solution will tackle tasks related to both the customer-side as well as the business-side of the product.</p>
+
+     <p>1. Our first storyboard shows how our proposed design will increase traffic to local businesses’ online (as well as offline) presence:</p>>
+
+     <figure>
+      <img src="img/group10s1.png" width=600><BR>
+    </figure> 
+
+    <p>2. Our second storyboard shows how our proposed design will incentivize customers to choose local businesses over large companies:</p>
+
+    <figure>
+      <img src="img/group10s2.png" width=600><BR>
+    </figure> 
+
+      <!-- End page content -->
+
+    </div>
+
+    <footer class="site-footer">
+    <!-- Javascript will load the footer code here. -->
+    </footer>
+
+  </body>
+
+</html>

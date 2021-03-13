@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Edit page title -->
+    <title>Projects - CSE 440</title>
+ 
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- This script dynamically loads CSS and JS files from the course base directory -->
+    <!-- Only edit if you want to change the paths to your JS/CSS sources -->
+    <script>
+      // Get the base path for the course web by extracting 'courses' + courseName + quarter
+      var fullPathArray = window.location.pathname.split('/');
+      var basePathArray = fullPathArray.slice(0,4);
+      var basePath = basePathArray.join('/');
+
+      // CSS files to load
+      var cssSources = [
+        '/site/css/bootstrap.min.css',
+        '/site/css/main.css',
+      ];
+
+      // Javscript files to load
+      var jsSources = [
+        '/site/js/jquery.min.js',
+        '/site/js/bootstrap.min.js',
+        '/site/js/nav-bar.js',
+        '/site/js/footer.js'
+      ];
+  
+      // Include the script that will load the CSS & Javscript files
+      document.write("<script src=\'" + basePath + "/site/js/load-sources.js\'><\/script>");
+    </script>
+
+  </head>
+  
+  <body>
+    <header class="site-header">
+    <!-- Javascript will load the navigation bar code here. -->
+    </header>
+
+    <div class="container">
+          
+      <!-- Begin page content -->
+    
+      <!-- Edit main page content -->
+      <h1>Breaking the Cycle of Poverty</h1>
+      <h2>Learn how to earn a piece of the economic pie through investment</h2>
+      <p><b>Contributors</b>: Joely Swartz, Amber Xu, Danh Luong</p>
+    
+      <h3>Problem and Solution Overview</h3>
+
+      <p>The Covid-19 pandemic has exposed rot at the center of American economic life. Millions of low-income families are struggling to survive. Their incomes have disappeared and they risk losing their homes. At the same time, a small group of people has seen their wealth skyrocket because they have invested and own assets. New college graduates from low-income families are faced with additional financial challenges like a changing employment landscape and mounting student debt. How can they cope with this wealth inequality with such extreme financial challenges at the beginning of their career? Most new college graduates from low-income families lack basic financial knowledge and don’t have investment role models from their families. Wealthy people get wealthier because they know how to get and stay wealthy through investing their money. People from low-income backgrounds don’t know how to even begin investing and so are stuck in a cycle of depending on uncertain income just to survive. We live in the wealthiest society that has ever existed and believe everybody has a right to share in that wealth. Our mission is to help new college graduates from low-income families gain a foundation in investing knowledge in a clear, easy, interactive, and interesting way from an all-in-one virtual environment so they can be in better financial situations through their life and break through the cycle of poverty.</p>
+      
+      <h3>Design Research Goals, Stakeholders, and Participants</h3>
+
+      <p>During the pandemic, we are all Zoomers. Scheduling a Zoom interview meeting with our target participants or sending a survey to them online seemed the easiest way to complete. We interviewed 3 recent college graduates from low-income families and received 23 surveys from our participants. From surveys, 15 participants are our targeted group and 8 of them are possible stakeholders, who want to learn and start to invest but don’t know how. Based on their responses, we noticed that most of the participants had student loans and struggled with some financial difficulties. They all expressed their interest in learning how to invest, but they didn’t have any support from parents or any people around them to offer this kind of education or discuss the investment with them. They didn’t invest before mostly because of their lack of investment knowledge. Their main struggle was when they try to search for something they would love to learn, the information presented was too overwhelming, and it seems intimidating and boring. They need to spend a lot of time doing research, and even if they find some information related to what they want to learn, they don’t have the confidence to trust these resources. They want to have something that they can interact with and help them to easily understand the different variety of the investment, giving them clear guidance on how to get started, and centralized information, etc. </p>
+
+      <h3>Design Research Results and Themes</h3>
+      
+      <p>Surprisingly, 78.3% of our participants don’t have any knowledge about investing and don’t know how to get started, 56% of the qualified participants are currently investing, but most of them are doing it blindly due to the lack of investment knowledge. Most of the participants prefer online learning design because of its flexibility and convenience, and they want something that is beginner-friendly, easy, and free to use and download. In addition, more than 70% of our participants are willing to spend around 3 hours weekly to learn more about investment. Based on the responses of our research study participants, we have come up with some themes for our design.</p>
+
+      <h4>Disparities</h4>
+      <p>Participants have some form of debt and have struggled financially. They want to improve their financial situation by learning what options are available for them but they lack access to information on how to invest and people around them to discuss the investment. The participants express their needs for a design in which every user is equal and no one would be judged based on their appearance, financial status, or educational background.</p>
+
+      <h4>Information presentation</h4>
+      <p>All of our participants want the information presented in a way that's easy to understand and has multiple ways of learning it (visual, audio, etc.), so they don't need to spend hours of research by themselves.</p>
+
+      <h4>Decentralized information</h4>
+      <p>Information is not centralized. Participants complained that when they try to research something related to investment, they need to go to multiple websites to get information. They desire to access information without roaming several hours in multiple places.</p>
+
+     <h3>Proposed Design: Virtual learning exprience website</h3>
+
+     <p>People are stuck at home due to the pandemic and can not meet people in person and travel.  Since they crave real social interactions in the real world, the virtual learning experience website connects remote learners from around the world in a virtual reality online environment. All learners talk and learn just like they would do in the real world and beyond on the website at no cost without the use of VR glasses. </p>
+     <p>Our research study participants expressed their desire to learn financial and investment knowledge in an interactive and interesting way and most of them are willing to spend over 3 hours learning more deeply about investment. Virtual learning makes online learning more interactive and exciting. With the virtual learning website, we allow users to choose their avatar and the desired virtual environment (for example, they can choose to go on the beach in Thailand (relax environment), or mountains in Nepal, or typical classroom, etc.) in which they are most motivated to learn. </p>
+
+     <h4>Understand underlying principles of investment and guidance of how to start an investment with engaging presentation style and interesting lectures</h4>
+
+     <p>Since our goal is to help new college graduates to learn financial and investment knowledge, our key focus is offering to help users understand the underlying investment principles and help them increase their confidence in deciding which investment to make. Almost all of the participants from our user research mentioned their struggles of learning financial and investment that they felt those financial terms are either too complicated or presented with such boring presentation styles, making it hard for them to understand. We want to focus on how we are going to make our users' learning experience more fun and easier for them to digest this knowledge. For example, we would provide short video explanations with pop-up quizzes to help users better engage in the learning experience, data visualizations to link complicated terms to real life metaphors, provide them with the benefits and the risks of choosing certain types of investment.</p>
+
+     <p>Joeleen is searching for information about the Stock Market from different resources and finds them boring and difficult to understand. She receives a message from her best friend about a virtual learning experience website and decides to try it out.</p>
+
+     <figure>
+      <img src="img/group12s1.png" width=600><BR>
+    </figure> 
+
+    <p>Joeleen is setting her avatar and the learning environment in which she is most motivated to learn</p>
+
+    <figure>
+      <img src="img/group12s2.png" width=600><BR>
+    </figure> 
+
+    <p>Joeleen finds the Stock Market section, there she can pick some sections to study or follow the full course:</p>
+
+    <ol>
+      <li>Short videos about the overview of Stock Market: Introduction to the chosen concept. </li>
+      <li>Data visualization for exploring the Stock Market.</li>
+      <li>Stock Market lectures from professionals: detailed lectures on the topic that cover the underlying principles, benefits and risks etc.</li>
+      <li>Stock Market simulator: practice trading using learned materials.</li>
+      <li>How to start to invest in stocks. (Beginner guide)</li>
+    </ol>
+
+    <h4>Discuss the investment strategies with other learners in their desired environment</h4>
+
+    <p>Another important element when it comes to learning is interacting with other learners. Social learning with the common interest group of people provides great benefits. This allows our users to explore the learning content with other learners together, discuss the investment strategies, and support each other as they move forward. Especially in the current pandemic situation, social learning is needed more than ever. Since everything on the website is free and users would be brought into the virtual world that they can customize their looks, all users would not be judged by their look or their financial status like in real life, the disparity among users would be reduced. </p>
+
+    <figure>
+      <img src="img/group12s3.png" width=600><BR>
+    </figure> 
+
+    <p>Joeleen sets up her avatar and the environment she desires to be in on the Virtual learning website</p>
+
+    <figure>
+      <img src="img/group12s4.png" width=600><BR>
+    </figure> 
+
+    <p>Joeleen sees lots of other learners who are in the Bitcoin section and they start to talk about how Elon Musk brought $1.5 billion of bitcoin that will affect the market.</p>
+
+    <p>By providing an interactive virtual learning environment that users could interact with one another, we hope that our users, especially recent undergraduate students who have experienced financial hardship, would be able to gain better investment knowledge and make the right choice to invest for their future.</p>
+
+      <!-- End page content -->
+
+    </div>
+
+    <footer class="site-footer">
+    <!-- Javascript will load the footer code here. -->
+    </footer>
+
+  </body>
+
+</html>

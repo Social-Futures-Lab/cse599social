@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Edit page title -->
+    <title>Projects - CSE 440</title>
+ 
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- This script dynamically loads CSS and JS files from the course base directory -->
+    <!-- Only edit if you want to change the paths to your JS/CSS sources -->
+    <script>
+      // Get the base path for the course web by extracting 'courses' + courseName + quarter
+      var fullPathArray = window.location.pathname.split('/');
+      var basePathArray = fullPathArray.slice(0,4);
+      var basePath = basePathArray.join('/');
+
+      // CSS files to load
+      var cssSources = [
+        '/site/css/bootstrap.min.css',
+        '/site/css/main.css',
+      ];
+
+      // Javscript files to load
+      var jsSources = [
+        '/site/js/jquery.min.js',
+        '/site/js/bootstrap.min.js',
+        '/site/js/nav-bar.js',
+        '/site/js/footer.js'
+      ];
+  
+      // Include the script that will load the CSS & Javscript files
+      document.write("<script src=\'" + basePath + "/site/js/load-sources.js\'><\/script>");
+    </script>
+
+  </head>
+  
+  <body>
+    <header class="site-header">
+    <!-- Javascript will load the navigation bar code here. -->
+    </header>
+
+    <div class="container">
+          
+      <!-- Begin page content -->
+    
+      <!-- Edit main page content -->
+      <h1>HearAtHome: Affordable sound recognition at home for Deaf and Hard of hearing parents.</h1>
+      <p>Contributors: Mallory Johnson, Maurice Montag, Jacob van’t Hoog, Khoa Nguyen</p>
+    
+      <h3>Problem and Solution Overview</h3>
+
+      <p>Environmental sounds provide hearing people with rich information about the world, including situational awareness, awareness of risks, and a presence in their environment. For a parent, these sounds are especially crucial to respond quickly to the needs of their child. Those sound cues may be inaccessible to parents who are Deaf or hard of hearing (DHH). Although there are visual or tactile alternatives to many critical sounds (for example, flashing doorbells and vibrating alarms), these assistive tools are often expensive, uncomfortable, and not always available when they are most needed. Our solution aims to assist DHH people to become more aware of sound cues related to parenting young children (crying, laughing, things falling over, etc) while also providing important contextual information such as direction, loudness, and distance. We propose a smart home system which utilizes inexpensive sensors and existing devices, to make sounds more accessible to DHH parents.</p>
+      
+      <h3>Design Research Goals, Stakeholders, and Participants</h3>
+
+      <p>We conducted research on people that self-reported as DHH using an online survey. Additionally, we conducted three email interviews and one video interview with survey respondents. We selected participants for the survey based on responses to our requests on Reddit for participation, and we then used the survey responses to narrow down individuals to interview. We chose these methods because they worked the best to deliver results in the short time frame we had to conduct user research (1 week), and due to the inability to do in-person research during the COVID-19 pandemic.</p>
+      <p>The goal of our survey was to get a general idea of the experiences of DHH parents in the home, as well as their preferences regarding technological tools. The goal of the interviews was to expand on this information — while the survey focused on general demographic questions and short answers, during interviews we went into much more detail about examples and stories from the participant’s experience as a parent.</p>
+
+      <h3>Design Research Results and Themes</h3>
+      <p><u>Locating sounds</u></p>
+      <p>In general, the problems described by participants were less related to recognizing sounds and more related to locating them. Examples included knowing when something is knocked over in another room, knowing when doors in the house are opened/closed, and identifying the source of unknown “thump” sounds. Many respondents had single-sided deafness (SSD) — for these responses, in particular, the location/direction of sounds around them was a major concern. None of the participants had an existing technological solution to this problem, so we considered it a particularly important area to focus on.</p>
+      <p><u>Keeping track of children</u></p>
+      <p>Our research results showed that many of the obstacles DHH parents faced with childcare occurred inside the home — from stuff getting knocked over and children getting hurt to the inability to locate sounds of interest. The home was the central place of interest, and so we decided to center our design around in-home use. A common experience reported by participants was that their kids were constantly getting places they weren’t supposed to and that this was difficult to manage without the ability to quickly respond to a situation based on sound cues. We decided to focus on the specific use case of keeping track of multiple children throughout the house, as this would overlap with many of the problems we were considering: sound recognition, location detection, and responding to emergencies.</p>
+      <p><u>Form factor</u></p>
+      <p>Participants were overall open to the idea of new assistive technology, and many of them brought ideas for its design and function. A common request was live captioning (speech to text), though some were happy with existing solutions. Many respondents had complaints about their cochlear implants or hearing aids and wanted a solution that was more comfortable, more convenient, and less intrusive. The majority of survey respondents owned a smartwatch or smart home devices. These devices were common enough that we decided we could focus on smart homes as an existing ecosystem to target.</p>
+
+
+     <h3>Proposed Design</h3>
+
+     <p>Our proposed solution is a smart home system with sensors and phone notifications for Deaf and hard of hearing parents. Our smart home system features a network of devices placed throughout the house, which work in coordination to localize sounds and detect important events. These devices include small, inexpensive microphones in each room, door-mounted sensors, and existing smart home devices such as appliances and voice assistants. With a central database of the devices and their locations, they can work together to provide location-accurate information about events happening throughout the house. These events are sent to the user’s smartphone for convenient access, with alerts/notifications depending on priority and user customization. Note Figure 1 for a visual representation.</p>
+
+     <figure>
+      <img src="img/group6s1.png" width=400><BR>
+    </figure> 
+
+    <p>We selected this design because it allows for coverage of the entire home, not just the coverage that can be gained via a single device like a smartphone. It allows for finer detection of sounds, and the more precise location of sounds, due to the increased number of microphones. This makes it better able to coordinate the location of a sound within a large space, despite the presence of barriers such as walls. It is also more convenient than other approaches — it is always on, unintrusive, and doesn’t require wearing a special device at all times.</p>
+    <p>We found in our research that people preferred things connected to their phone since it was a device that they always had on them. A problem with many other assistive devices is that the user has to remember to carry or wear the device constantly so it can help them out when they need it; with this solution, we don’t have that problem. Based on our interviews, most participants would not mind having small microphones set up in each of the rooms of their house as long as they weren’t too obtrusive, and as long as the analysis was done securely. In future testing, we hope to drive deeper into the app interface and figure out what features should be available there.</p>
+
+      <!-- End page content -->
+
+    </div>
+
+    <footer class="site-footer">
+    <!-- Javascript will load the footer code here. -->
+    </footer>
+
+  </body>
+
+</html>
