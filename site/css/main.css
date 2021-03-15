@@ -392,7 +392,7 @@ pre > code {
     border: 1px solid rgba(0,0,0,.125);
     border-radius: .25rem;
     width: 23rem;
-    height: 43rem;
+    height: 45rem;
     margin-bottom: 30px;
 }
 
@@ -430,6 +430,10 @@ pre > code {
 
 .card_project .btn-right {
 	background-color: #e8f1fc;
+}
+
+.card-text {
+	font-size: 14px;
 }
 
 .btn-left:hover, .btn-left:focus, .btn-left:active, .btn-left.active, .btn-left:hover>a, .btn-right:hover>a,
