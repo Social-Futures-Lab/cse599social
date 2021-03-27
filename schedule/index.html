@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Edit page title -->
-    <title>Schedule - CSE 440</title>
-
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,400italic,600' rel='stylesheet' type='text/css'>
+    <title>Schedule - CSE 599</title>
+ <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&amp;family=Roboto+Mono:ital,wght@0,500;1,300&amp;display=swap" rel="stylesheet">
+  
     <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
     <!-- This script dynamically loads CSS and JS files from the course base directory -->
@@ -17,7 +17,7 @@
     <script>
       // Get the base path for the course web by extracting 'courses' + courseName + quarter
       var fullPathArray = window.location.pathname.split('/');
-      var basePathArray = fullPathArray.slice(0,4);
+      var basePathArray = fullPathArray.slice(0,5);
       var basePath = basePathArray.join('/');
 
       // CSS files to load
@@ -50,7 +50,7 @@
       <!-- Begin page content -->
 
       <!-- Edit main page header -->
-      <h1>CSE 440 Winter 2021: Schedule</h1>
+      <h1>CSE 599 Spring 2021: Schedule and Readings</h1>
 
       <!-- Edit main page content -->
 
@@ -67,336 +67,704 @@
 				<div class="week">Week</div>
 				<div class="date">Date</div>
 				<div class="topic">Class Topic</div>
-				<div class="links">Links</div>
-				<div class="assignments">Deliverable</div>
-				<div class="milestone">Group Milestone</div>
-			</div>
-			<div class="theme">
-				Design Process
+				<div class="links">Readings</div>
+				<div class="assignments">In-Class Activity</div>
+				<div class="milestone">Due by Class</div>
 			</div>
 			<div class="day oddday">
 				<div class="week">1</div>
-				<div class="date">Tues, Jan 5</div>
-				<div class="topic">Lecture 01 - Introduction, What is HCI?</div>
+				<div class="date">Mon, Mar 29</div>
+				<div class="topic"><b>Introduction</b><BR>
+					Introduction to social computing, this class, and each other.</div>
 				<div class="links">
-					<a href="https://courses.cs.washington.edu/courses/cse440/21wi/slides/01-HCI.pdf">Slides</a><BR>
-					<a href="https://courses.cs.washington.edu/courses/cse440/21wi/readings/index.html#lecture_01">Links and Readings</a>
+					(Optional) Watch <a href="https://www.youtube.com/watch?v=4oFD_VKGp78">UIST+CSCW: A Celebration of Systems Research in Collaborative and Social Computing</a>
 				</div>
 				<div class="assignments"></div>
-				<div class="milestone"></div>
+				<div class="milestone">
+				</div>
 			</div>
 			<div class="day evenday">
 				<div class="week"></div>
-				<div class="date">Thurs, Jan 7</div>
-				<div class="topic">Lecture 02 - Design Process</div>
-				<div class="links"><a href="https://courses.cs.washington.edu/courses/cse440/21wi/slides/02-Design_Process.pdf">Slides</a><BR>
-				<a href="https://courses.cs.washington.edu/courses/cse440/21wi/readings/index.html#lecture_02">Links and Readings</a>
+				<div class="date">Wed, Mar 31</div>
+				<div class="topic"><b>A science of the artificial</b><BR>
+					Why is designing social technologies so hard? While code and databases can be rigid and brittle, as social actors, we have nuanced social
+					requirements and perform actions circumstantially. There is an inherent gap here that may be unbridgeable. 
+					But trying to just directly replicate in-person interaction also misses out on new possibilities with technology.
+					Instead, in building a constructed world, what we are creating are <i>new</i> interactions---these are different from offline social 
+					requirements but equally rich.
+			
 				</div>
-				<div class="assignments"></div>
-				<div class="milestone">Groups assigned</div>
+				<div class="links">
+					<P>Suchman, Lucy. "Plans and Situated Actions: The problem of human-machine communication." 1985. 
+						[<a href="http://bitsavers.trailing-edge.com/pdf/xerox/parc/techReports/ISL-6_Plans_and_Situated_Actions.pdf">pdf</a>] 
+						(<i>Introduction and Conclusion</i>)</P>
+					<P>Hollan, Jim, and Scott Stornetta. "Beyond being there." 1992. [<a href="http://hci.ucsd.edu/media/uploads/hci_papers/JH1992-2.pdf">pdf</a>]
+					</P><P>
+					Ackerman, Mark S. "The intellectual challenge of CSCW: The gap between social requirements and technical feasibility." 2000. [<a href="https://www.socialworldsresearch.org/sites/default/files/hci.final_.pdf">pdf</a>]
+					</P>
+					
+						
+				</div>
+				<div class="assignments">Project ideas brainstorm</div>
+				<div class="milestone">3 project ideas</div>
 			</div>
 			<div class="day oddday">
-				<div class="week"></div>
-				<div class="date">Fri, Jan 8</div>
-				<div class="topic">Section: introduction and brainstorm session</div>
-				<div class="links"></div>
-				<div class="assignments"><a href = "https://canvas.uw.edu/courses/1431900/assignments/5982478">Assignment 1a: Three Project Proposals</a></div>
-				<div class="milestone"></div>
-			</div>
-			<div class="day evenday">
 				<div class="week">2</div>
-				<div class="date">Tues, Jan 12</div>
-				<div class="topic">Lecture 03 - Ideation and Critique</div>
-				<div class="links">
-					<a href="https://courses.cs.washington.edu/courses/cse440/21wi/slides/03-Ideation_Critique.pdf">Slides</a><BR>
-					<a href="https://courses.cs.washington.edu/courses/cse440/21wi/readings/index.html#lecture_03">Links and Readings</a>
+				<div class="date">Mon, Apr 5</div>
+				<div class="topic">
+					<b>Evaluating social computing systems</b><BR>
+						One major difficulty with making progress in social computing systems research is how to do evaluation.
+						It is valuable to know if people will use a new design and how they would use it in a realistic setting.
+						However, recruitment, medium-to-long-term usage, and eventual adoption can be difficult to achieve.
 				</div>
-				<div class="assignments"></div>
-				<div class="milestone"></div>
-			</div>
-			<div class="theme">
-				Design Principles
-			</div>
-			<div class="day oddday">
-				<div class="week"></div>
-				<div class="date">Thurs, Jan 14</div>
-				<div class="topic">Lecture 04 - Design Principles</div>
 				<div class="links">
-					<a href="https://courses.cs.washington.edu/courses/cse440/21wi/slides/04-Design_Principles_I.pdf">Slides</a><BR>
-					<a href="https://courses.cs.washington.edu/courses/cse440/21wi/readings/index.html#lecture_04">Links and Readings</a>
+					<P>
+						Grudin, Jonathan. "Why CSCW applications fail: problems in the design and evaluation of organizational interfaces." 
+						1988. [<a href="http://gerrystahl.net/teaching/winter11/Grudin_Fail.pdf">pdf</a>]
+					</P>
+					<P>
+						Bernstein, Michael S., Mark S. Ackerman, Ed H. Chi, and Robert C. Miller. "The trouble with social computing systems research." 2011.
+						[<a href="https://dspace.mit.edu/bitstream/handle/1721.1/64444/Miller_The%20Trouble.pdf%3Bjsessionid%3DD16AE455E533597043205F9490D9439B?sequence%3D1">pdf</a>]
+					</P>
+					<P>
+						Grevet, Catherine, and Eric Gilbert. "Piggyback prototyping: Using existing, large-scale social computing systems to prototype new ones." 2015.
+						[<a href="https://comp.social.gatech.edu/papers/chi15.airport.grevet.pdf">pdf</a>]
+					</P>
+					
 				</div>
-				<div class="assignments"></div>
-				<div class="milestone"></div>
+				<div class="assignments">
+					Project evaluation brainstorm
+				</div>
+				<div class="milestone">
+					3 evaluation ideas
+				</div>
 			</div>
 			<div class="day evenday">
 				<div class="week"></div>
-				<div class="date">Fri, Jan 15</div>
-				<div class="topic">Section: present project proposal</div>
-				<div class="links"></div>
-				<div class="assignments"><a href = "https://canvas.uw.edu/courses/1431900/assignments/5982962">Assignment 1b: Revised Single Project Proposal</a></div>
-				<div class="milestone">Groups have narrowed down and finalized their chosen project direction</div>
+				<div class="date">Wed, Apr 7</div>
+				<div class="topic">
+					<b>Flexibility vs. formalization</b><BR>
+					Building on last week's readings, we dive deeper into the tradeoffs and opportunities for design in between
+					greater flexibility versus more formalized structure in technology-mediated social interaction.
+					This tension comes up repeatedly in social activities such as coordination, preference elicitation, 
+					and communication. Requirements are also different depending on who is being coordinated and what they are coordinating on.
+					Finally, <i>what</i> gets captured vs not in the structure has political ramifications.
+					
+					</div>
+				<div class="links">
+						<p>
+						Shipman, Frank M., and Catherine C. Marshall. "Formality considered harmful: Experiences, 
+						emerging themes, and directions on the use of formal representations in interactive systems." 
+						1999. [<a href="https://link.springer.com/content/pdf/10.1023/A:1008716330212.pdf">pdf</a>]
+						</p>
+						
+						<P>
+							Suchman, Lucy. "Do categories have politics? The language/action perspective reconsidered." 1993.
+							[<a href="https://www.lri.fr/~mbl/ENS/CSCW/2017/papers/Suchman-JCSCW94.pdf">pdf</a>]
+							(<i>Optionally, see <a href="https://hci.stanford.edu/winograd/papers/language-action.html">1</a>, 
+								<a href="https://www.lri.fr/~mbl/ENS/CSCW/2015/papers/Winograd-JCSCW94.pdf">3</a>,
+								<a href="http://sonify.psych.gatech.edu/~ben/references/suchman_speech_acts_and_voices.pdf">4</a></i>)
+						</P>
+							Pick one:<ul>
+								<li>
+								Grinter, Rebecca E. "Workflow systems: Occasions for success and failure." 2000.
+								[<a href="https://www.cc.gatech.edu/~beki/j4.pdf">pdf</a>]
+								</li><li>
+								Valentine, Melissa A., Daniela Retelny, Alexandra To, 
+								Negar Rahmati, Tulsee Doshi, and Michael S. Bernstein.
+								 "Flash organizations: Crowdsourcing complex work by structuring crowds as organizations." 
+								 2017. [<a href="http://library.usc.edu.ph/ACM/CHI%202017/1proc/p3523.pdf">pdf</a>]
+								 </li>
+						</ul>
+					
+					
+				</div>
+				<div class="assignments"></div>
+				<div class="milestone">
+					
+				</div>
 			</div>
 			<div class="day oddday">
 				<div class="week">3</div>
-				<div class="date">Tues, Jan 19</div>
-				<div class="topic">Lecture 05 - Design Principles II</div>
-				<div class="links">
-					<a href="https://courses.cs.washington.edu/courses/cse440/21wi/slides/05-Design_Principles_II.pdf">Slides</a><BR>
-					<a href="https://courses.cs.washington.edu/courses/cse440/21wi/readings/index.html#lecture_05">Links and Readings</a>
+				<div class="date">Mon, Apr 12</div>
+				<div class="topic">
+					<b>Power, labor, and delegation</b>
+					<BR>
+					As Suchman pointed out, design decisions in social computing systems can reinforce or reconfigure power. 
+					What work becomes visible or invisible as a result of the design?
+					Who (or what) gets delegated new responsibilities? And who benefits from that additional work or that delegation?
+					Particularly in 
+					the workplace, where there is usually already an existing power hierarchy, answers to these questions
+					can impact adoption.
+					
 				</div>
-				<div class="assignments"><a href = "https://canvas.uw.edu/courses/1431900/assignments/5985290">Assignment 2a: Project Ideation</a></div>
-				<div class="milestone"></div>
-			</div>
-			<div class="theme">
-				User Research
+				<div class="links">
+					
+					<P>
+						Ribes, David, Steven Jackson, Stuart Geiger, Matthew Burton, and Thomas Finholt. "Artifacts that organize: Delegation in the distributed organization." 2013.
+							[<a href="http://stuartgeiger.com/artifacts-that-organize.pdf">pdf</a>]
+					</P>
+					
+					<P>
+						Cranshaw, Justin, Emad Elwany, Todd Newman, Rafal Kocielnik, Bowen Yu, Sandeep Soni, Jaime Teevan, and Andrés Monroy-Hernández. "Calendar. help: Designing a workflow-based scheduling agent with humans in the loop." 
+						2017. [<a href="https://arxiv.org/pdf/1703.08428.pdf">pdf</a>]
+						</P>
+						Pick one:
+						<ul>
+							<li>
+						Star, Susan Leigh, and Anselm Strauss. "Layers of silence, arenas of voice: 
+						The ecology of visible and invisible work." 1999.
+						[<a href="https://link.springer.com/content/pdf/10.1023/A:1008651105359.pdf">pdf</a>]
+						</li><li>
+						Ekbia, Hamid, and Bonnie Nardi. "Heteromation and its (dis) contents: The invisible division of labor between humans and machines." 2014.
+						[<a href="https://journals.uic.edu/ojs/index.php/fm/article/download/5331/4090">pdf</a>]
+						</li>
+						</ul>
+				
+				</div>
+				<div class="assignments">
+					Project idea presentations and  class feedback
+					</div>
+					<div class="milestone">
+						Submit initial project proposal and finalize team composition
+						
+					</div>
 			</div>
 			<div class="day evenday">
 				<div class="week"></div>
-				<div class="date">Thurs, Jan 21</div>
-				<div class="topic">Lecture 06 - User Research</div>
+				<div class="date">Wed, Apr 14</div>
+				<div class="topic">
+				<b>Crossing distances</b><BR>
+					Though technology enables collaboration across distances, it is still difficult, as we have experienced to some degree in this pandemic
+					year of collaborating remotely.
+					There are also different kinds of distances---it can mean distance across space and time-zones, across time (synchronous vs asynchronous),
+					and across cultures and contexts. 
+					Can design of social systems account for these distances or mitigate the struggles of working across them?
+					
+				</div>
 				<div class="links">
-					<a href="https://courses.cs.washington.edu/courses/cse440/21wi/slides/06-User_Research_I.pdf">Slides</a><BR>
-					<a href="https://courses.cs.washington.edu/courses/cse440/21wi/readings/index.html#lecture_06">Links and Readings</a>
+					<P>Olson, Gary M., and Judith S. Olson. "Distance matters." 2000.
+						[<a href="https://www.researchgate.net/profile/Gary-Olson/publication/262257884_Distance_Matters/links/54f89ee20cf210398e96c5d8/Distance-Matters.pdf">pdf</a>]
+					</P>
+						Pick one:
+							<ul>
+						<li>Matthiesen, Stina, and Pernille Bjørn. "When distribution of tasks and skills are fundamentally problematic: A failure story from global software outsourcing." 2017.
+						[<a href="https://dl.acm.org/doi/pdf/10.1145/3139336">pdf</a>]
+						</li><li>
+						Reinecke, Katharina, Minh Khoa Nguyen, Abraham Bernstein, Michael Näf, and Krzysztof Z. Gajos. 
+						"Doodle around the world: Online scheduling behavior reflects cultural differences in time perception and group decision-making." 
+						2013.
+						[<a href="https://homes.cs.washington.edu/~reinecke/Publications_files/Reinecke_Doodle.pdf">pdf</a>]</li>
+						</ul>
 				</div>
 				<div class="assignments"></div>
 				<div class="milestone"></div>
 			</div>
 			<div class="day oddday">
-				<div class="week"></div>
-				<div class="date">Fri, Jan 22</div>
-				<div class="topic">Section: present design research plan</div>
-				<div class="links"></div>
-				<div class="assignments"><a href = "https://canvas.uw.edu/courses/1431900/assignments/5985295">Assignment 2b: Design Research Plan</a></div>
-				<div class="milestone">Groups finalize user research methods, start reaching users</div>
-			</div>
-			<div class="day evenday">
 				<div class="week">4</div>
-				<div class="date">Tues, Jan 26</div>
-				<div class="topic">Lecture 07 - User Research II</div>
-				<div class="links">
-					<a href="https://courses.cs.washington.edu/courses/cse440/21wi/slides/07-User_Research_II.pdf">Slides</a><BR>
-					<a href="https://courses.cs.washington.edu/courses/cse440/21wi/readings/index.html#lecture_07">Links and Readings</a>
+				<div class="date">Mon, Apr 19</div>
+				<div class="topic">
+						<b>Shared awareness</b><BR>
+					Social translucence is about designing what social information we make visible to others,
+					what information has central vs peripheral awareness, and what we become accountable for as a result (I know that you know that I know...)
+					This visibility can be negotiated, sometimes even with technology itself as justification. 
+					Finally, configuring what is "shared" changes when moving from a centralized space for social activity to a networked or personally filtered one.
+				
 				</div>
-				<div class="assignments"></div>
-				<div class="milestone"></div>
-			</div>
-			<div class="theme">
-				Scenarios and Tasks
-			</div>
-			<div class="day oddday">
-				<div class="week"></div>
-				<div class="date">Thurs, Jan 28</div>
-				<div class="topic">Lecture 08 - Task Analysis</div>
 				<div class="links">
-					<a href="https://courses.cs.washington.edu/courses/cse440/21wi/slides/08-Task_Analysis.pdf">Slides</a><BR>
-					<a href="https://courses.cs.washington.edu/courses/cse440/21wi/readings/index.html#lecture_08">Links and Readings</a>
+					<p>
+						Erickson, Thomas, and Wendy A. Kellogg. "Social translucence: an approach to designing systems that support social processes." 2000.
+						[<a href="https://collablab.northwestern.edu//CollabolabDistro/nucmc/p59-erickson.pdf">pdf</a>]</p>
+						<P>
+					Nardi, Bonnie A., Steve Whittaker, and Erin Bradner. "Interaction and outeraction: Instant messaging in action." 2000.
+					[<a href="http://social.cs.uiuc.edu/class/cs598kgk-04/papers/p79-nardi.pdf">pdf</a>]	
+						</P>
+						<P>
+					Gilbert, Eric. "Designing social translucence over social networks." 2012.
+					[<a href="http://eegilbert.org/papers/chi12.trans.gilbert.pdf">pdf</a>]		
+						</P>
 				</div>
-				<div class="assignments"></div>
-				<div class="milestone"></div>
+				<div class="assignments">
+					Present Assignment 1
+				</div>
+				<div class="milestone">
+					Assignment 1 write-up due before class.
+				</div>
 			</div>
 			<div class="day evenday">
 				<div class="week"></div>
-				<div class="date">Fri, Jan 29</div>
-				<div class="topic">Section: present user research findings</div>
-				<div class="links"></div>
-				<div class="assignments"><a href = "https://canvas.uw.edu/courses/1431900/assignments/5985298">Assignment 2c: Design Research Review</a> (Extension until Mon, Feb 1)</div>
-				<div class="milestone">Wrapping up user research</div>
+				<div class="date">Wed, Apr 21</div>
+				<div class="topic">
+					
+					<b>Authenticity, vulnerability, and identity</b><BR>
+						An important aspect of social computing system design is designing capabilities for identity expression and management.
+					In time, we've gone from visions of a "identity-less utopia" in the days of the early internet to more recently, 
+					Facebook's "Real Name" policy.
+					So should systems enforce any aspect of identity? 
+					What meta-data can an individual associate with an
+					account, what aspects are salient in presentation to different audiences, and how expressive, flexible, and controllable is that presentation?
+					How much can we be authentically and fluidly ourselves given certain technical designs?
+					
+				</div>
+				<div class="links">
+					<P>
+						Nakamura, Lisa. "Race in/for cyberspace: Identity tourism and racial passing on the Internet." 1995.
+						[<a href="https://smg.media.mit.edu/library/nakamura1995.html">pdf</a>]
+					</P>
+					<P>
+						Marwick, Alice E., and Danah Boyd. "I tweet honestly, I tweet passionately: Twitter users, context collapse, and the imagined audience." 2011.
+						[<a href="http://educ333b.pbworks.com/w/file/fetch/53249911/marwick_boyd_twitter_nms.pdf">pdf</a>]
+					</P>
+					Pick one:
+						<ul>
+							<li>Xiao, Sijia, Danaë Metaxa, Joon Sung Park, Karrie Karahalios, and Niloufar Salehi. "Random, Messy, Funny, Raw: Finstas as Intimate Reconfigurations of Social Media." 2020.
+								[<a href="https://dl.acm.org/doi/pdf/10.1145/3313831.3376424">pdf</a>]
+								</li>
+							<li>
+								Haimson, Oliver. "Social media as social transition machinery." 2018.
+								[<a href="https://www.researchgate.net/profile/Oliver-Haimson/publication/327405284_Social_Media_as_Social_Transition_Machinery/links/5b8d7c1ea6fdcc1ddd09f82f/Social-Media-as-Social-Transition-Machinery.pdf">pdf</a>]
+							</li>
+							<li>
+								Leavitt, Alex. "This is a Throwaway Account" Temporary Technical Identities and Perceptions of Anonymity in a Massive Online Community." 2015.
+								[<a href="http://alexleavitt.net/papers/2015_CSCW_Leavitt_ThisIsAThrowawayAccount_AnonymityReddit.pdf">pdf</a>]
+							</li>
+						</ul>
+						<P>
+							(Optional) Barlow, John Perry. "A declaration of the independence of cyberspace." 1996.
+							[<a href="https://www.eff.org/cyberspace-independence">link</a>]
+						</P>
+					
+				</div>
+				<div class="assignments"></div>
+				<div class="milestone"></div>
 			</div>
+			
 			<div class="day oddday">
 				<div class="week">5</div>
-				<div class="date">Tues, Feb 2</div>
-				<div class="topic">Lecture 09 - Sketching</div>
-				<div class="links">
-					<a href="https://courses.cs.washington.edu/courses/cse440/21wi/slides/09-Sketching.pdf">Slides</a><BR>
-					<a href="https://courses.cs.washington.edu/courses/cse440/21wi/readings/index.html#lecture_09">Links and Readings</a>
+				<div class="date">Mon, Apr 26</div>
+				<div class="topic">
+					<b>Augmenting and regulating self-expression</b><BR>
+						Social technologies today make design decisons and provide tools that shape indviduals' self-expression or self-presentation, 
+						either on their behalf or with their control.
+						They also regulate what kinds of self-expression are not permitted. 
+						Once deployed to the public and widely adopted, such digitally-mediated self-expression can result in feedback loops that
+						alter societal expectations, particularly when technical interventions are opaque.
+						
 				</div>
-				<div class="assignments"><a href = "https://canvas.uw.edu/courses/1431900/assignments/5985300">Assignment 2d: Task Analysis</a> (Extension until Wed, Feb 3)</div>
-				<div class="milestone"></div>
-			</div>
-			<div class="day evenday">
-				<div class="week"></div>
-				<div class="date">Thurs, Feb 4</div>
-				<div class="topic">Lecture 10 - Storyboarding</div>
 				<div class="links">
-					<a href="https://courses.cs.washington.edu/courses/cse440/21wi/slides/10-Storyboarding.pdf">Slides</a><BR>
-					<a href="https://courses.cs.washington.edu/courses/cse440/21wi/readings/index.html#lecture_10">Links and Readings</a>
+					<P>
+						Hancock, Jeffrey T., Mor Naaman, and Karen Levy. "AI-mediated communication: definition, research agenda, and ethical considerations." 2020.
+						[<a href="https://academic.oup.com/jcmc/article/25/1/89/5714020">pdf</a>]
+					</P>
+					<P>
+						Tolentino, Jia. "The age of Instagram face." 2019. 
+						[<a href="https://www.newyorker.com/culture/decade-in-review/the-age-of-instagram-face">link</a>]
+					</P>
+					Pick one:
+					<ul>
+						<li>
+							Burke, Moira, Justin Cheng, and Bethany de Gant. "Social comparison and Facebook: Feedback, positivity, and opportunities for comparison." 2020.
+							[<a href="http://www.thoughtcrumbs.com/publications/burke_etal_social_comparison_chi2020.pdf">pdf</a>]
+							
+						</li>
+						<li>
+							Chancellor, Stevie, Michael L. Birnbaum, Eric D. Caine, Vincent MB Silenzio, and Munmun De Choudhury. "A taxonomy of ethical tensions in inferring mental health states from social media." 2019.
+							 [<a href="http://www.munmund.net/pubs/FAT*2019_EthicsTaxonomy.pdf">pdf</a>]
+						</li>
+					</ul>
 				</div>
 				<div class="assignments"></div>
 				<div class="milestone"></div>
 			</div>
-			<div class="day oddday">
-				<div class="week"></div>
-				<div class="date">Fri, Feb 5</div>
-				<div class="topic">Section: present 2e design checkin</div>
-				<div class="links"></div>
-				<div class="assignments"><a href = "https://canvas.uw.edu/courses/1431900/assignments/5985302">Assignment 2e: Design Checkin (3x4)</a> (Extension until Sat, Feb 6)</div>
-				<div class="milestone"></div>
-			</div>
-			<div class="theme">
-				Societal Implications
-			</div>
 			<div class="day evenday">
+				<div class="week"></div>
+				<div class="date">Wed, Apr 28</div>
+				<div class="topic">
+					<b>Curation, amplification, and delivery of social content</b><BR>
+					As the amount of social content increases, the curation of that content for individuals burdened with information overload
+					becomes paramount. There are many ways to reduce this burden. Senders could be more selective about
+					whom they send to. Receivers could configure what they want to receive. Groups of people could collectively decide what is
+					desired versus not. Because this can be burdensome too, algorithms could try to learn these things to do them on behalf of people. That last strategy
+					is common now on many platforms but introduces new problems.
+					
+				</div>
+				<div class="links">
+				
+					<P>
+					Resnick, Paul, Neophytos Iacovou, Mitesh Suchak, Peter Bergstrom, and John Riedl. "Grouplens: An open architecture for collaborative filtering of netnews."
+							 1994. [<a href="https://dl.acm.org/doi/pdf/10.1145/192844.192905">pdf</a>]
+							 </P>
+					<P>
+						Eslami, Motahhare, Aimee Rickman, Kristen Vaccaro, Amirhossein Aleyasen, Andy Vuong, Karrie Karahalios, Kevin Hamilton, and Christian Sandvig. ""I always assumed that I wasn't really that close to [her]" Reasoning about Invisible Algorithms in News Feeds." 2015.
+							[<a href="https://dl.acm.org/doi/pdf/10.1145/2702123.2702556">pdf</a>]
+					</P>
+					Pick one:
+					<ul>
+						<li>
+							Kairam, Sanjay, Mike Brzozowski, David Huffaker, and Ed Chi. "Talking in circles: selective sharing in google+." 2012.
+							[<a href="http://sanjaykairam.com/pdf/Kairam-CHI2012.pdf">pdf</a>]
+						</li>
+						<li>
+							Park, Soya, Amy X. Zhang, Luke S. Murray, and David R. Karger. "Opportunities for automating email processing: A need-finding study." 2019.
+							[<a href="https://dspace.mit.edu/bitstream/handle/1721.1/128345/1201913182-MIT.pdf?sequence=1&isAllowed=y">pdf</a>]
+						</li>
+						<li>
+							Stray, Jonathan. "Aligning AI Optimization to Community Well-Being." 2020.
+							[<a href="https://link.springer.com/article/10.1007/s42413-020-00086-3">link</a>]
+						</li>
+					</ul>
+				</div>
+				<div class="assignments">
+					Present mid-point project update
+				</div>
+				<div class="milestone">
+					Submit project update and literature review
+				</div>
+			</div>
+			<div class="day oddday">
 				<div class="week">6</div>
-				<div class="date">Tues, Feb 9</div>
-				<div class="topic">Lecture 11 - Societal Implications</div>
-				<div class="links">
-					<a href="https://courses.cs.washington.edu/courses/cse440/21wi/slides/11-Societal_Implications.pdf">Slides</a><BR>
-					<a href="https://courses.cs.washington.edu/courses/cse440/21wi/readings/index.html#lecture_11">Links and Readings</a>
+				<div class="date">Mon, May 3</div>
+				<div class="topic">
+				
+					<B>
+					Agency, inclusivity, and ownership
+				</B>
+				<BR>
+					Instead of builders imposing designs on users, what would it mean to design so that user
+					agency and consent comes first?
+					Instead of designers encoding a singular way of communicating into technology,
+					what if social systems allowed for people and groups to come up with their own designs and tailor it to their needs?
+					How much is this feasible for users to do on their own vs by communicating their requirements to 
+					members of their community with programming skills?
 					
+				</div>
+				<div class="links">
+						<P>
+						Geiger, R. Stuart. "Bot-based collective blocklists in Twitter: the counterpublic moderation of harassment in a networked public space." 2016.
+						[<a href="https://escholarship.org/content/qt6nb9m5wg/qt6nb9m5wg.pdf">pdf</a>]
+					</P>
+					<P>
+						Fiesler, Casey, Shannon Morrison, and Amy S. Bruckman. "An archive of their own: A case study of feminist HCI and values in design." 2016.
+						[<a href="https://cmci.colorado.edu/~cafi5706/CHI2016_AO3_Fiesler.pdf">pdf</a>]
+					</P>
+					<P>
+						Im, Jane, Jill Dimond, Melody Berton, Una Lee, Katherine Mustelier, Mark Ackerman, and Eric Gilbert. "Yes: Affirmative Consent as a Theoretical Framework for Understanding and Imagining Social Platforms." 2021.
+						[<a href="http://eegilbert.org/papers/chi21-consent-im.pdf">pdf</a>]
+					</P>
 				</div>
 				<div class="assignments"></div>
-				<div class="milestone"></div>
-			</div>
-			<div class="theme">
-				Prototyping and User Testing
-			</div>
-			<div class="day oddday">
-				<div class="week"></div>
-				<div class="date">Thurs, Feb 11</div>
-				<div class="topic">Lecture 12 - Paper Prototyping</div>
-				<div class="links">
-					<a href="https://courses.cs.washington.edu/courses/cse440/21wi/slides/12-Paper_Prototyping.pdf">Slides</a><BR>
-					<a href="https://courses.cs.washington.edu/courses/cse440/21wi/readings/index.html#lecture_12">Links and Readings</a>
-					
-					
+				<div class="milestone">
 				</div>
-				<div class="assignments"><a href = "https://canvas.uw.edu/courses/1431900/assignments/5985305">Assignment 2f: Design Review (1x2)</a></div>
-				<div class="milestone">Finalized design sketch and storyboard</div>
 			</div>
 			<div class="day evenday">
 				<div class="week"></div>
-				<div class="date">Fri, Feb 12</div>
-				<div class="topic">Section: working session on paper prototyping</div>
-				<div class="links"></div>
-				<div class="assignments"></div>
-				<div class="milestone"></div>
+				<div class="date">Wed, May 5</div>
+				<div class="topic">
+						<b>Encouraging newcomers and motivating contribution</b><BR>
+						One of the first problems for any online social space is getting it off the ground. 
+						Even when a community is established, it is still important to invite and bring in new members or else
+						the community may stagnate and eventually become like a "ghost town". 
+						How can social computing systems be designed to motivate or incentivize contribution?
+				</div>
+				<div class="links">
+					<P>
+						Ren, Yuqing, Robert Kraut, and Sara Kiesler. "Applying common identity and bond theory to design of online communities." 2007.
+						[<a href="https://www.cs.cmu.edu/afs/cs.cmu.edu/Web/People/kiesler/publications/2007pdfs/2007_common-identity-bond.pdf">pdf</a>
+					</P>
+					<P>
+						Burke, Moira, Cameron Marlow, and Thomas Lento. "Feed me: motivating newcomer contribution in social network sites." 2009.
+						[<a href="https://dl.acm.org/doi/pdf/10.1145/1518701.1518847">pdf</a>]
+					</P>
+					<P>
+						Ford, Denae, Kristina Lustig, Jeremy Banks, and Chris Parnin. "" We Don't Do That Here" How Collaborative Editing with Mentors Improves Engagement in Social Q&A Communities." 
+						 2018. [<a href="https://dl.acm.org/doi/pdf/10.1145/3173574.3174182">pdf</a>]
+					</P>
+					
+				</div>
+				<div class="assignments">
+					Present Assignment 2
+				</div>
+				<div class="milestone">
+					Assignment 2 write-up due before class
+				</div>
 			</div>
 			<div class="day oddday">
 				<div class="week">7</div>
-				<div class="date">Tues, Feb 16</div>
-				<div class="topic">Lecture 13 - Interface Evaluation</div>
-				<div class="links">
-					<a href="https://courses.cs.washington.edu/courses/cse440/21wi/slides/13-Interface_Evaluation.pdf">Slides</a><BR>
-					<a href="https://courses.cs.washington.edu/courses/cse440/21wi/readings/index.html#lecture_13">Links and Readings</a>
-					
-					
+				<div class="date">Mon, May 10</div>
+				<div class="topic">
+					<b>Cultivating norms</b><BR>
+						In every social setting, there are norms about what is acceptable behavior.
+						In a highly homogeneous and exclusive setting, norms may not need to be spoken.
+						But in open, diverse, and more inclusive settings, norms need to be visible and regularly and transparently enacted
+						in order to be broadly known and followed. The work of cultivating norms in an online social space
+						involves both design of tools as well as the human labor of community leaders.
 				</div>
-				<div class="assignments"><a href = "https://canvas.uw.edu/courses/1431900/assignments/5985306">Assignment 2g: User research blog post</a></div>
-				<div class="milestone"></div>
-				
-			</div>
-			<div class="day evenday">
-				<div class="week"></div>
-				<div class="date">Thurs, Feb 18</div>
-				<div class="topic">Lecture 14 - Heuristic Evaluation</div>
 				<div class="links">
-					<a href="https://courses.cs.washington.edu/courses/cse440/21wi/slides/14-Heuristic_Evaluation.pdf">Slides</a><BR>
-					<a href="https://courses.cs.washington.edu/courses/cse440/21wi/readings/index.html#lecture_14">Links and Readings</a>
-				</div>
-				<div class="assignments"><a href = "https://canvas.uw.edu/courses/1431900/assignments/5985535">Assignment 3a: Paper Prototype (before class)</a>, <a href = "https://canvas.uw.edu/courses/1431900/assignments/5985588">Assignment 3b: Heuristic Evaluation</a></div>
-				<div class="milestone">Finalized paper prototype, begin usability testing</div>
-				
-			</div>
-			<div class="day oddday">
-				<div class="week"></div>
-				<div class="date">Fri, Feb 19</div>
-				<div class="topic">Section: working session on paper prototype iteration, usability testing plan</div>
-				<div class="links"></div>
-				<div class="assignments"></div>
-				<div class="milestone"></div>
-			</div>
-			<div class="day evenday">
-				<div class="week"></div>
-				<div class="date">Tues, Feb 23</div>
-				<div class="topic">Lecture 15 - Interface Implementation</div>
-				<div class="links">
-					<a href="https://courses.cs.washington.edu/courses/cse440/21wi/slides/15-Interface_Implementation.pdf">Slides</a><BR>
-					<a href="https://courses.cs.washington.edu/courses/cse440/21wi/readings/index.html#lecture_15">Links and Readings</a>
+					<P>
+						Kiesler, Sara, Robert Kraut, Paul Resnick, and Aniket Kittur. "Regulating behavior in online communities." 2012.
+						[<a href="https://www.researchgate.net/profile/Sara-Kiesler/publication/265260679_Regulating_Behavior_in_Online_Communities/links/553e2c2b0cf20184050ddb2c/Regulating-Behavior-in-Online-Communities.pdf">pdf</a>]
+					</P>
+					<P>
+						Matias, J. Nathan. "The civic labor of volunteer moderators online." 2019.
+						[<a href="https://journals.sagepub.com/doi/pdf/10.1177/2056305119836778">pdf</a>]
+					</P>
+					<P>
+						Jhaver, Shagun, Amy Bruckman, and Eric Gilbert. "Does transparency in moderation really matter? User behavior after content removal explanations on reddit." 2019.
+						[<a href="https://dl.acm.org/doi/pdf/10.1145/3359252">pdf</a>]
+					</P>
 					
 					
 				</div>
 				<div class="assignments"></div>
 				<div class="milestone"></div>
-			</div>
-			<div class="theme">
-				Pitching, Presenting, and Visual Design
-			</div>
-			<div class="day oddday">
-				<div class="week"></div>
-				<div class="date">Thurs, Feb 25</div>
-				<div class="topic">Lecture 16 - Communication and Visual Design</div>
-				<div class="links">
-					<a href="https://courses.cs.washington.edu/courses/cse440/21wi/slides/16-Graphic_Design_Communication.pdf">Slides</a><BR>
-					<a href="https://courses.cs.washington.edu/courses/cse440/21wi/readings/index.html#lecture_16">Links and Readings</a>
-					
-				</div>
-				<div class="assignments"><a href="https://canvas.uw.edu/courses/1431900/assignments/5985606">Assignment 3c: Usability Testing</a></div>
-				<div class="milestone">Finalize usability testing</div>
+				
 			</div>
 			<div class="day evenday">
 				<div class="week"></div>
-				<div class="date">Fri, Feb 26</div>
-				<div class="topic">Section: present 3d preliminary mockup</div>
-				<div class="links"></div>
+				<div class="date">Wed, May 12</div>
+				<div class="topic">
+					<b>Conflict resolution and sanctions</b><BR>
+					Even in the days of MUDs, USENET newsgroups, and mailing lists, all the way to today, online social systems have had to contend with
+					anti-social, disruptive, and harassing behavior within their communities. 
+					What should be done when someone violates the rules or norms in an online social setting? 
+					How should a community address interpersonal conflicts that arise? 
+					
+				</div>
+				<div class="links">
+					<P>
+						Kittur, Aniket, Bongwon Suh, Bryan A. Pendleton, and Ed H. Chi. "He says, she says: conflict and coordination in Wikipedia." 2007.
+						[<a href="https://www.researchgate.net/profile/Ed-Chi/publication/200772986_He_Says_She_Says_Conflict_and_Coordination_in_Wikipedia/links/09e4150f999ef88a15000000/He-Says-She-Says-Conflict-and-Coordination-in-Wikipedia.pdf">pdf</a>]
+					</P>
+					<P>
+						Schoenebeck, Sarita, Oliver L. Haimson, and Lisa Nakamura. "Drawing from justice theories to support targets of online harassment." 2020.
+						[<a href="https://journals.sagepub.com/doi/pdf/10.1177/1461444820913122">pdf</a>]
+					</P>
+					<P>
+						(Optional) Dibbell, Julian. "A rape in cyberspace or how an evil clown, a Haitian trickster spirit, two wizards, and a cast of dozens turned a database into a society." 1993.
+						[<a href="http://www.juliandibbell.com/articles/a-rape-in-cyberspace/">link</a>] (<i>(Content warning: rape</i>)
+					</P>
+				</div>
+				<div class="assignments"></div>
+				<div class="milestone"></div>
+				
+			</div>
+			<div class="day oddday">
+				<div class="week">8</div>
+				<div class="date">Mon, May 17</div>
+				<div class="topic">
+					<b>Governance structures</b><BR>
+						Zooming out from the design of how to enforce or notify about rules is the broader question of 
+						how rules get made and who has the power to participate in rule-making---questions of governance. 
+						While some social technologies have encoded alternative governance structures, the majority of online social systems
+						have some sort of autocratic or technocratic structure with designated roles for administrators and moderators and 
+						over the long term, ossified leadership, as opposed to democracy. 
+						
+				</div>
+				<div class="links">
+				<P>
+						Lampe, Cliff, and Paul Resnick. "Slash (dot) and burn: distributed moderation in a large online conversation space." 2004.
+						[<a href="https://dl.acm.org/doi/pdf/10.1145/985692.985761">pdf</a>
+					</P>
+					<P>
+						Shaw, Aaron, and Benjamin M. Hill. "Laboratories of oligarchy? How the iron law extends to peer production." 2014.
+						[<a href="https://www.nulearningforlife.org/wp-content/uploads/2016/08/Shaw_Hill-2014-LaboratoriesOligarchy-JoC.pdf">pdf</a>]
+					</P>
+					Pick one:
+					<ul>
+						<li>
+						Zhang, Amy X., Grant Hugh, and Michael S. Bernstein. "PolicyKit: Building Governance in Online Communities." 2020.
+						[<a href="https://arxiv.org/pdf/2008.04236.pdf">pdf</a>]
+					</li>
+					<li>
+						Schneider, Nathan. "Admins, mods, and benevolent dictators for life: The implicit feudalism of online communities."
+						[<a href="https://mediarxiv.org/sf432/">pdf</a>]
+						</li>
+					</ul>
+					<P>
+						(Optional) Freeman, Jo. "The tyranny of structurelessness." 1972.
+						[<a href="http://utc.mitotedigital.org/sites/default/files/content/freeman_tyranny_of_structurelessness.pdf">pdf</a>]
+					</P>
+					
+				</div>
+				<div class="assignments">
+					Present Assignment 3
+				</div>
+				<div class="milestone">
+					Assignment 3 write-up due before class
+				</div>
+			</div>
+			<div class="day evenday">
+				<div class="week"></div>
+				<div class="date">Wed, May 19</div>
+				<div class="topic">
+					<b>Platform governance and policy</b><BR>
+						The design of policy and technology goes hand in hand to affect use.
+						Today, we live in a world of "platform-ized" social spaces online, with a handfull of private companies that each have
+						massive user populations. In this environment, the governance of and governance by these platforms have huge 
+						ramifications for society and public discourse. 
+						What could we change about policy or about technology to make platforms more accountable to society?
+					</div>
+				<div class="links">
+						<P>
+						Jackson, Steven J., Tarleton Gillespie, and Sandy Payette. "The policy knot: Re-integrating policy, practice and design in CSCW studies of social computing." 2014.
+						[<a href="https://sjackson.infosci.cornell.edu/Jacksonetal_ThePolicyKnot(CSCW2014).pdf">pdf</a>]
+					</P>
+					<P>
+						Klonick, Kate. "The new governors: The people, rules, and processes governing online speech." 2017.
+						[<a href="https://scholarship.law.stjohns.edu/cgi/viewcontent.cgi?article=1184&context=faculty_publications">pdf</a>]
+					</P>
+					Pick one:
+					<ul>
+						<li>
+							Masnick, Mike. "Protocols, Not Platforms: A Technological Approach to Free Speech." 2019.
+							[<a href="https://knightcolumbia.org/content/protocols-not-platforms-a-technological-approach-to-free-speech">link</a>]
+						</li>
+						<li>
+							Zuckerman, Ethan. "What Is Digital Public Infrastructure?" 2020.
+							[<a href="https://www.journalismliberty.org/publications/what-is-digital-public-infrastructure">link</a>]
+						</li>
+					</ul>
+				</div>
 				<div class="assignments"></div>
 				<div class="milestone"></div>
 			</div>
 			<div class="day oddday">
 				<div class="week">9</div>
-				<div class="date">Mon, Mar 1</div>
-				<div class="topic"></div>
-				<div class="links"></div>
-				<div class="assignments"><a href = "https://canvas.uw.edu/courses/1431900/assignments/5985610">Assignment 3d: Preliminary Mockup</a></div>
+				<div class="date">Mon, May 24</div>
+				<div class="topic">
+					<b>Contested public spheres</b><BR>
+						Hallin's spheres and the Overton window are both theories to describe a range of public consensus on political topics. 
+						As more people move online and into large, public platforms where everyone has the capability to command a megaphone and 
+						find like-minded people, some of these people will seek to use that power to push an agenda.
+						When that agenda is to spread disinformation or further polarization and mistrust, 
+						is there anything we can do counter that with design?
+				</div>
+				<div class="links">
+					<P>
+						Starbird, Kate, Ahmer Arif, and Tom Wilson. "Disinformation as collaborative work: Surfacing the participatory nature of strategic information operations." 2019.
+						[<a href="https://dl.acm.org/doi/pdf/10.1145/3359229">pdf</a>]
+					</P>
+					<P>
+						Bail, Christopher A., Lisa P. Argyle, Taylor W. Brown, John P. Bumpus, Haohan Chen, MB Fallin Hunzaker, Jaemin Lee, Marcus Mann, Friedolin Merhout, and Alexander Volfovsky. "Exposure to opposing views on social media can increase political polarization." 2018.
+						[<a href="https://www.pnas.org/content/115/37/9216?mod=article_inline">pdf</a>]
+					</P>
+					Pick one:
+					<ul>
+						<li>
+							Phillips, Whitney. "The oxygen of amplification." 2018.
+							[<a href="https://datasociety.net/wp-content/uploads/2018/05/2-PART-2_Oxygen_of_Amplification_DS.pdf">pdf</a>]
+						</li>
+						<li>
+							Farrell, Henry, and Bruce Schneier. "Common-knowledge attacks on democracy." 2018.
+							[<a href="http://henryfarrell.net/wp/wp-content/uploads/2018/11/SSRN-id3273111.pdf">pdf</a>]
+						</li>
+					</ul>
+					
+					
+				</div>
+				<div class="assignments"></div>
 				<div class="milestone"></div>
 			</div>
-			<div class="theme">
-				Exam
+			<div class="day evenday">
+				<div class="week"></div>
+				<div class="date">Wed, May 26</div>
+				<div class="topic">
+					<b>Collective and civic action</b><BR>
+						Despite threats to democracy posed by social technologies, these spaces can also be an exciting 
+						avenue to further collective and civic action in a democratic society. Social technologies can enable
+						grassroots political movements to grow that push for cultural and political change and also involve more people in the 
+						process of governing by inviting greater public input and deliberation.
+						Many social technologies used for these purposes weren't built with them in mind. Could they better support these goals?
+				</div>
+				<div class="links">
+				<p>
+						Barry, Elizabeth. "VTaiwan: public participation methods on the cyberpunk frontier of democracy." 2016.
+						[<a href="https://civichall.org/civicist/vtaiwan-democracy-frontier/">link</a>]
+					</p>
+					<P>
+						Freelon, Deen, Charlton D. McIlwain, and Meredith Clark. "Beyond the hashtags: #Ferguson, #Blacklivesmatter, and the online struggle for offline justice." 2016.
+						[<a href="http://archive.cmsimpact.org/sites/default/files/beyond_the_hashtags_2016.pdf">pdf</a>]
+					</P>
+					Pick one:
+					<ul>
+						<li>
+							Erete, Sheena, and Jennifer O. Burrell. "Empowered participation: How citizens use technology in local governance." 2017.
+							[<a href="https://dl.acm.org/doi/pdf/10.1145/3025453.3025996">pdf</a>]
+						</li>
+						<li>
+						Ghoshal, Sucheta, and Amy Bruckman. "The role of social computing technologies in grassroots movement building." 2019.
+						[<a href="https://dl.acm.org/doi/pdf/10.1145/3318140">pdf</a>]
+						</li>
+						<li>
+							Mahyar, Narges, Michael R. James, Michelle M. Ng, Reginald A. Wu, and Steven P. Dow. "CommunityCrit: inviting the public to improve and evaluate urban design ideas through micro-activities." 2018.
+							[<a href="https://dl.acm.org/doi/pdf/10.1145/3173574.3173769">pdf</a>]
+						</li>
+					</ul>
+					
+				</div>
+				<div class="assignments">Present Assignment 4</div>
+				<div class="milestone">Assignment 4 write-up due before class</div>
 			</div>
 			
-			<div class="day evenday">
-				<div class="week"></div>
-				<div class="date">Tues, Mar 2</div>
-				<div class="topic">Exam Q&A</div>
-				<div class="links"></div>
-				<div class="assignments"></div>
-				<div class="milestone"></div>
-			</div>
-			<div class="day oddday">
-				<div class="week"></div>
-				<div class="date">Thurs, Mar 4</div>
-				<div class="topic">Exam</div>
-				<div class="links"></div>
-				<div class="assignments"></div>
-				<div class="milestone"></div>
-			</div>
-			<div class="theme">
-				Presentations
-			</div>
-			<div class="day evenday">
-				<div class="week"></div>
-				<div class="date">Fri, Mar 5</div>
-				<div class="topic">Section: work on posters and pitch</div>
-				<div class="links"></div>
-				<div class="assignments"><a href = "https://canvas.uw.edu/courses/1431900/assignments/5985614">Assignment 3e: Design Blog Post + finished mockup</a> (Extension until Sat, Mar 6)</div>
-				<div class="milestone">Finalized digital mockup</div>
-			</div>
-
 			<div class="day oddday">
 				<div class="week">10</div>
-				<div class="date">Tues, Mar 9</div>
-				<div class="topic">Pitch and poster feedback session</div>
-				<div class="links"></div>
-				<div class="assignments"><a href = "https://canvas.uw.edu/courses/1431900/assignments/5985620">Assignment 4a: Initial Poster and Pitch (before class)</a></div>
+				<div class="date">Mon, May 31</div>
+				<div class="topic">Memorial Day (no class)<BR><BR>
+					
+					<b>
+						Participation
+					</b><BR>
+						All these opportunities for greater participation enabled by social technologies in principle help to shift the power 
+						balance from implementors, governors, and designers towards the people who are actually affected by the decisions that people in power make.
+						However in practice, sometimes "participation-washing" can be extractive and disempowering. Other times, a great deal of participation
+						results in no outcome. How can design of social technologies support not just the elicitation of opinions and dialogue but also the
+						converging of a group of people towards consensus, solution, or action?
+						
+					</div>
+				<div class="links">
+						<p>
+						Kelty, Christopher M. "Too much democracy in all the wrong places: toward a grammar of participation." 2017.
+						[<a href="https://www.journals.uchicago.edu/doi/pdfplus/10.1086/688705">pdf</a>]
+					</p>
+					<P>
+						Harrington, Christina, Sheena Erete, and Anne Marie Piper. "Deconstructing community-based collaborative design: Towards more equitable participatory design engagements."
+						2019.
+						[<a href="https://dl.acm.org/doi/pdf/10.1145/3359318">pdf</a>]
+					</P>
+					Pick one:
+					<ul>
+						<li>
+							Kriplean, Travis, Jonathan Morgan, Deen Freelon, Alan Borning, and Lance Bennett. "Supporting reflective public thought with considerit." 2012.
+							[<a href="https://dl.acm.org/doi/pdf/10.1145/2145204.2145249">pdf</a>]
+						</li>
+						<li>
+							Salehi, Niloufar, Lilly C. Irani, Michael S. Bernstein, Ali Alkhatib, Eva Ogbe, and Kristy Milland. "We are dynamo: Overcoming stalling and friction in collective action for crowd workers." 2015.
+							[<a href="https://dl.acm.org/doi/pdf/10.1145/2702123.2702508">pdf</a>]
+						</li>
+						
+						<li>
+							Malone, Thomas W., Jeffrey V. Nickerson, Robert J. Laubacher, Laur Hesse Fisher, Patrick De Boer, Yue Han, and W. Ben Towne. "Putting the pieces back together again: Contest webs for large-scale problem solving." 2017.
+							[<a href="https://dl.acm.org/doi/pdf/10.1145/2998181.2998343">pdf</a>]
+						</li>
+						
+						
+						
+					</ul>
+					
+				</div>
+				<div class="assignments"></div>
 				<div class="milestone"></div>
 			</div>
 
 			<div class="day evenday">
 				<div class="week"></div>
-				<div class="date">Thurs, Mar 11</div>
-				<div class="topic">Virtual Poster Session</div>
+				<div class="date">Wed, June 2</div>
+				<div class="topic">Final Project Presentations</div>
 				<div class="links"></div>
-				<div class="assignments"><a href = "https://canvas.uw.edu/courses/1431900/assignments/5985620">Assignment 4b: Final Poster and Pitch (before class)</a></div>
-				<div class="milestone">Finalized pitch and poster</div>
+				<div class="assignments"></div>
+				<div class="milestone">
+					Project should be wrapping up. Presentation of finished work in class.
+				</div>
 			</div>
 		</div>
 

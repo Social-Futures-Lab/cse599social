@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CSE 599: Social and Collaborative Computing</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&amp;family=Roboto+Mono:ital,wght@0,500;1,300&amp;display=swap" rel="stylesheet">
+  
+    <!-- Include this script in order to dynamically load CSS and JS files -->
+    <!-- Only edit if you want to change the paths to your JS/CSS sources -->
+    <script>
+      // Get the base path for the course web by extracting 'courses' + courseName + quarter
+      var fullPathArray = window.location.pathname.split('/');
+      var basePathArray = fullPathArray.slice(0,5);
+      var basePath = basePathArray.join('/');
+
+      // CSS files to load
+      var cssSources = [
+        '/site/css/bootstrap.min.css',
+        '/site/css/main.css',
+      ];
+
+      // Javscript files to load
+      var jsSources = [
+        '/site/js/jquery.min.js',
+        '/site/js/bootstrap.min.js',
+        '/site/js/nav-bar.js',
+        '/site/js/footer.js'
+      ];
+
+      // Include the script that will load the CSS & Javscript files
+      document.write("<script src=\'" + basePath + "/site/js/load-sources.js\'><\/script>");
+    </script>
+
+  </head>
+
+  <body>
+    <header class="site-header">
+      <!-- Javascript will load the navigation bar code here. -->
+    </header>
+
+    <div class="container">
+
+      <!-- Use this navigation box as desired on some or all pages to provide navigation links
+           in addition to the top menu. -->
+
+
+      <!-- Begin home page content -->
+
+
+     <div class="row">
+
+
+     	<div class="col-md-2">
+     		<nav class="navbar hidden-print hidden-sm hidden-xs sticky nav-sidebar" id="side-nav">
+            <ul>
+	            <li class="nav-item side-nav-0"><a class="nav-link" href="#description">
+			        Course Description
+			    </a></li><li class="nav-item side-nav-0"><a class="nav-link" href="#basic">
+			        Basic Information
+			    </a></li><li class="nav-item side-nav-0"><a class="nav-link" href="#structure">
+			        Course Structure
+			    </a></li><li class="nav-item side-nav-1"><a class="nav-link" href="#goals">
+					Learning Goals
+			    </a></li>
+			    <li class="nav-item side-nav-1"><a class="nav-link" href="#expectations">
+					Expectations
+			    </a></li><li class="nav-item side-nav-1"><a class="nav-link" href="#accommodations">
+			        Accommodations
+			    </a></li>
+			    <li class="nav-item side-nav-0"><a class="nav-link" href="#readings">
+			        Readings
+			    </a></li>
+			    <li class="nav-item side-nav-0"><a class="nav-link" href="#assignments">
+			        Assignments
+			    </a></li>
+			    <li class="nav-item side-nav-0"><a class="nav-link" href="#project">
+			        Project
+			    </a></li><li class="nav-item side-nav-0"><a class="nav-link" href="#grading">
+			        Grading
+			    </a></li><li class="nav-item side-nav-0"><a class="nav-link" href="#acknowledgements">
+			        Acknowledgements
+			    </a></li
+
+			    </ul>
+        </nav>
+     	</div>
+
+     	<div class="content col col-md-9 col-md-offset-3">
+
+     <h1>CSE 599 Spring 2021: Syllabus</h1>
+     
+
+      <div class="section" id="description" data-href="index.html#description" data-level="0" class="side-nav-header" style="border-top: 0px">
+      	<h2>Course Description</h2>
+      	
+      	
+      	<P><b>Social and collaborative computing</b> (social computing for short) is the study of technology-mediated human social interaction, encompassing all social activity from interpersonal relationships, teams, communities, institutions, to society at large. It examines:</P>
+<ul><li>how technology shapes human social interaction,</li>
+<li>how humans repurpose and shape technology for social interaction, </li>
+<li>emergent effects and coevolution from the combination of the two, and </li>
+<li>the design of new technology that mediates human social interaction.</li>
+</ul>
+<P>Our interactions with other humans today are increasingly becoming mediated through technology, a trend that this pandemic has only exacerbated. Meanwhile, a plethora of computational systems have been introduced in the last several decades that have us interacting with each other in different ways. Sometimes the outcome is good for people and society, leading to serendipitous exchange, collaborative learning, civic engagement, large-scale open and public projects, creative cultural production, and the strengthening of social bonds and support networks. However, we are now more and more attuned to the negative ramifications of these systems, including rampant harassment, polarization and strife, surveillance and loss of rights, trolling and grifting, information overload, misinformation, and the spread of hate.</P>
+<P>As designers and builders of social computing systems, can we imagine a better future? How do we know whether our imagined designs will encourage pro-social outcomes, and how do we guard against harmful negative consequences? How do we know whether a system will be effective or even adopted in the first place?</P>
+<P>In this seminar course, students will gain a broad understanding of the current research landscape in social computing, focusing on a system perspective to examine and imagine system designs to address pressing issues. We will read and discuss papers weekly covering different subareas of social computing, foundational papers in the field, and different methods in social computing. Finally, all students individually or in groups will conduct a research project on building, evaluating, or theorizing about a new social computing design.</P>
+
+      	
+    	</div>
+
+	<div class="section" id="basic" data-href="index.html#basic" data-level="0" class="side-nav-header">
+	<h2>Basic Information</h2>
+
+
+	<span style="font-weight: bold;">Class time</span>: MW, 1:30PM - 2:50PM PT<BR>
+	<span style="font-weight: bold;">Location</span>: online<BR>
+	<span style="font-weight: bold;">Office hours</span>: by appointment<BR>
+
+	<span style="font-weight: bold;">Instructor</span>:
+			
+					<a href="https://homes.cs.washington.edu/~axz" target="_blank" rel="noopener">
+						<!-- <img src="img/az2.png" width=150><BR> -->
+						Amy Zhang</a>, axz@cs.uw.edu
+		<BR><BR>
+				<span style="font-weight: bold;">Social technologies used in the class</span>: <BR>
+		<ul>
+			<li>Zoom: class time presentations and discussions</li>
+			<li>Slack: group chat for socializing and linksharing</li>
+			<li>Canvas: posting reading responses</li>
+			<li>NB: collaborative annotation of readings</li>
+			<li>Jotto/Medium: posting of assignments (privately or publicly)</li>
+			<li>Happy to try other ones too!</li>
+		</ul>
+			
+
+	</div>
+
+	<div class="section" id="structure"  data-href="index.html#structure" data-level="0" class="side-nav-header">
+	<h2>Course Structure</h2>
+	
+	<p>This class is designed to be highly interactive. You will be expected to actively participate in 
+		all class discussions, occasionally lead class discussions, 
+		and participate in in-class activities, project updates, and feedback sessions. 
+		Following are the main activities that will occur during class time:
+	</p>
+	<p><b>Reading Response</b>: You will read and discuss important papers and articles 
+		in the field. Each class, there will be 2-3 reading assignments. 
+		We will be collectively annotating each reading.
+		In the days before class begins, you will write a one paragraph reflection about each
+		reading assignment and post it to Canvas.
+	</p>
+	<p><b>Discussion Leader</b>: Each class will have two assigned leaders of the 
+		class. 
+		In class, they will summarize the readings and students' 
+		responses, and spur in-class discussion.
+	</p>
+	<p><b>In-class Participation and Activities</b>: Each class will feature peer 
+		discussions facilitated by the discussion leaders. Occasionally, a 
+		class will also feature an in-class activity designed by the discussion leaders
+		or informal presentations of project updates or assignments.
+		When we have an invited guest, students will be expected 
+		to participate in asking questions to the guest.
+	</p>
+	<P>
+		<b>Project</b>: A central component of the class is an individual or group research project that will culminate in a 
+		4-6 page write-up. There will be milestones and informal presentations and feedback throughout the quarter.
+	</P>
+
+	
+	<div class="subsection" id="goals"  data-href="index.html#goals" data-level="1" class="side-nav-header">
+	<h3>Learning Goals</h3>
+	By the end of this course, students will have gained:
+	<ul>
+		<li>
+			A basic overview of the social theories, major researchers, terminology, historical debates, and long-standing problems that have shaped the field.
+		</li>
+		<li>
+			Knowledge of the current state of the field, including
+			key recent literature, outstanding research questions, and newer areas of interest.
+		</li>
+		<li>
+			An understanding of different research and design methods within social computing, with a focus on the design of social computing systems,
+			 and which methods can practically best tackle which research questions.
+		</li>
+	</ul>
+	
+	</div>
+	
+	<div class="subsection" id="expectations"  data-href="index.html#expectations" data-level="1" class="side-nav-header">
+	<h3>Expectations</h3>
+	<h4>Participation and Preparation</h4>
+	<P>
+	You are expected to attend and actively participate in every class session. 
+	To make the most of this class and not disrupt others, I expect you to be on time and ready to discuss the readings. 
+	I expect you to complete readings early and submit reading responses on time to help the discussion leaders prepare.
+	I expect you to be ready to present your work when the time comes, including assignments, project presentations, and when you are
+	discussion leader.
+	If you are working in a team for the project, I expect you to be respectful to your teammates and contribute equally to the work.
+	Finally, I expect you to actively participate in conversation and be respectful and attentive towards any guest visitors.
+	</p><P>
+		If you can't make class because of an extenuating circumstance, please let me know before class, and I can excuse you. You will
+		still be expected to complete any readings, responses, and assignments related to the class that you miss.
+	</P>
+	</P><BR>
+		
+		<h4>Deadlines and Extensions</h4>
+	<P>
+	Deadlines are primarily there to help the class run smoothly, such as finishing reading responses in time for the discussion leaders
+	and turning in assignments and project deliverables in time for presenting them in class.
+	However, if you have an extenuating circumstance, please reach out to me about whether and how you can receive an extension.
+	It's important that you be proactive in letting me know about things that come up instead of telling me after the fact so that we can plan together and
+	others are not disrupted.
+	</P><BR>
+	
+	<h4>A Note on Diversity and Respectful Conduct</h4>
+	<p>This course welcomes all students of all backgrounds. The computer science and computer engineering 
+		industries have significant lack of diversity. This is due to a lack of sufficient past efforts 
+		by the field toward even greater diversity, equity, and inclusion. The Allen School seeks 
+		to create a more diverse, inclusive, and equitable environment for our community and our 
+		field. You should expect and demand to be treated by your classmates and myself 
+		with respect. If any incident occurs that challenges this commitment to a supportive, diverse, 
+		inclusive, and equitable environment, please let me know so the issue can be addressed.</p>
+	</div>
+
+	<div class="subsection" id="accommodations"  data-href="index.html#accommodations" data-level="1" class="side-nav-header">
+	<h3 >Disability, Religious, and Family Accommodations</h3>
+	<p>If you have any questions about disability or religious accommodations, please refer to university policies regarding <a href="http://depts.washington.edu/uwdrs/current-students/accommodations/" target="_blank" rel="noopener">disability accommodations</a> or <a href="https://registrar.washington.edu/staffandfaculty/religious-accommodations-polic/" target="_blank" rel="noopener"> religious accommodations</a>. 
+		Feel free to also contact me for any reason.</p>
+	
+	</div>
+	</div>
+	
+	<div class="section" id="readings"  data-href="index.html#readings" data-level="0" class="side-nav-header">
+	<h2 >Readings</h2>
+	<p><b>Readings and Annotation</b>: 
+		Each class will feature 2-3 papers around a common theme in social computing system design. I aimed to pick papers that have a mix of
+		methods, a mix of contributions, including more theoretical versus more artifact contributions, and a mix of older and more recent work.
+		In some classes, you will get choose which among a set of papers to read. This often happened because I had trouble picking among
+		a number of important papers, so you are of course welcome to read all of them.</P>
+		<P>
+			You should be finished with reading papers and have annotations posted by 8PM the night before class so that the discussion leaders can prepare their presentation for class.
+		I will be distributing PDFs of the papers on the <a href="http://nb.mit.edu/">NB platform</a>, which allows for inline annotation to support threaded comments in the margins
+		of the text. You will be expected to contribute at least one comment or reply to a comment on each of your papers. 
+		I encourage you to use this platform to leave more targeted and off-the-cuff thoughts and questions while you are in the process of reading and to
+		read and respond to the comments left behind by other students.
+	</p>
+	<p><b>Reading Response</b>:
+		 At the conclusion of reading, you will be required to post a 1-paragraph reflection on each of the papers you read to our Canvas discussion board.
+		 This too needs to be done by 8PM the night before class to give discussion leaders time to work on their presentation for class.
+		 In each 1-paragraph reflection, you should provide your thoughts on what you found interesting about the work, questions that the work raised, 
+		 connections to other literature or research fields,
+		 a reflection of how the work relates to your own projects or prior personal experience, 
+		 and/or reflect on how the work relates to anything happening in current events. In your responses, you can also connect
+		  one reading to another one of the readings or even
+		 respond to another student's response.
+	</p>
+	<P><B>In-class Presentation and Discussion</B>:
+		For about two of the classes, you'll be part of a pair tasked with leading the class discussion on the readings. 
+		When you are a discussion leader, you do not need to write reading responses, though you may find it useful to do anyway (you should still annotate the readings).
+		At the beginning of the class, you should give a 5-10 minute presentation covering the background on the topic of the class, the content of the papers, 
+		and how they sit in dialogue with
+		each other. You'll provide your personal take on these papers, including where you think the work could be improved or extended. For
+		more historical papers, you'll consider how well they hold up today and reframe them given the current state of social technology.
+	</P><P>
+		You will then lead a ~30 minute discussion with the class.
+		You'll summarize students' reading responses, pulling out the patterns that you noticed or the reflections you found particularly interesting.
+		Start us off with at least 3 questions or points of discussion drawing from students' responses to spur in-class discussion among students.
+		Feel free to devise interesting ways to engage students, such as coming up with an activity, think-pair-shares, or play with different social technologies to elicit
+		different types of engagement (very relevant to the class!).
+	</P>
+	
+	</div>
+	
+
+	<div class="section" id="assignments"  data-href="index.html#assignments" data-level="0" class="side-nav-header">
+	<h2 >Assignments</h2>
+	<P>
+		We'll have 4 light assignments meant to encourage deeper reflection on the course topics as a whole as well as allow you to bring something unique to the class
+		from your personal experience or explorations online. Your submissions on these assignments do not need to be
+		polished or long but they should be thoughtful. The goal of sharing them in class with others is to
+		spark discussion among your classmates or expose them to new perspectives.
+	</P>
+	<BR>
+	<p>
+		<h4>Assignment 1: Reflection on personal social technology usage</h4>
+			Submission due by <b>Mon, Apr 19</b> with a presention in class that day.<BR>
+		In this assignment, your goal is to reflect on your personal usage of social technology to share with the class. 
+		You can approach this project a number of ways. Feel free to be creative!
+		For example you could take a data-driven approach to track or measure some aspect of your online social experience for a week.
+		You could do a retrospective analysis of your own activity on social media, email, or some other social technology or that of a community
+		that you are active in over a longer period of time.
+		You could spend a week attempting to change some aspect of your social technology usage, such as switching to a new technology or
+		contributing in a different way, and report back on the experience.
+		You could interview or survey a moderator or community member of a community that you are active in. 
+		The output of your work can be in any format but should be accompanied by a write-up of no more than 1 page (not counting visual aids) that will be posted as a blog post.
+		
+</p><BR>
+<p>
+		<h4>Assignment 2: Tell us about an interesting online community</h4>
+			Submission due by <b>Wed, May 5</b> with a presention in class that day.<BR>
+		Your goal for this assignment is to report on an interesting, niche, or unusual online community. 
+		You can be a part of this community or it can be a community that you find online. It can even be a community that you were once a part of but left or is now no longer active.
+		Do not share any personal or private information about
+		community members, and be respectful of community boundaries.
+		What is interesting or unique about this community? What sorts of social technology do they use to interact and 
+		what are some important features of their systems? Are the dynamics in the community pro-social or anti-social?
+		What are the norms, and are they clear or opaque? How does the community treat newcomers? How do people self-identify?
+		What is the governance of the community and how do people gain influence or power? Is there anything that happened in this community's
+		past that impacted how it is now? Feel free to use any method to answer any of these questions. You don't have to answer all of these questions
+		but tell us the parts you find most interesting.
+		You will write this up in a document that is no more than 1 page (not counting visual aids) and that will be posted as a blog post.
+		
+</p><BR>
+
+<p>
+		<h4>Assignment 3: Critique of a social technology</h4>
+			Submission due by <b>Mon, May 17</b> with a presention in class that day.<BR>
+		Take an existing social technology, come to an understanding of how it works,
+		and then critique its design along the lines of the topics that we have discussed so far.
+		For instance, how well does the design help to guard against harassment or other 
+		forms of <a href="https://simplysecure.org/designunderpressure/#methods">unwanted behavior</a>?
+		How is power and work explicitly distributed among users of the technology via the code?
+		What parts of the system are customizable? What happens to any data and who has access to it?
+		Is there any automation that happens within the system and how malleable or transparent is it?
+		How does the design address newcomers, or members operating at a distance, or people's self-expression and identity?
+		These are just ideas---please try to pick just one or two main aspects to guide your critique.
+		You will write this up in a document that is no more than 1 page (not counting visual aids) and that will be posted as a blog post.
+</p>
+<BR>
+<p>
+		<h4>Assignment 4: Reflection on the state of the field</h4>
+			Submission due by <b>Wed, May 26</b> with a presention in class that day.<BR>
+			For your final assignment, you will reflect on the state of the field of social computing given the readings and topics covered
+			in the class. What do you think are the most exciting avenues for future research? 
+			Are there topics that you feel have not received enough attention
+			or that deserve renewed attention for some reason?
+			Are there historical trends that you notice or outside influences that you think have shaped the field?
+			Are there methods you think should be used more?
+			Are there other disciplines that social computing systems researchers should engage with more?
+			How should the field think about public impact and public outreach and engagement?
+			These are just ideas to spur your thoughts---please just focus on one or a few topics at most.
+			You will write this up in a document that is no more than 1 page (not counting visual aids) and that will be posted as a blog post.
+</p>
+
+</div>
+
+	<div class="section" id="project"  data-href="index.html#project" data-level="0" class="side-nav-header">
+	<h2 >Project</h2>
+	<p><b>Research Project</b>: In a quarter-long team or individual project, you'll conduct a research project that furthers our 
+		understanding of social computing system design. You are not expected to produce publishable work in the course of 
+		this quarter; however, the work should tackle an interesting research question that could be expanded to become 
+		publishable work after the quarter is over. If you have an ongoing research project that might relate to the
+		 topics in this course, connecting to your research is encouraged. Your project might be one of the following:
+</p>
+<ul>
+<li>Design and implement a new social computing system or intervention motivated by prior literature.
+</li>
+<li>Conduct an empirical evaluation of a new prototype of a social computing system or intervention.
+</li>
+<li>Perform a qualitative or quantitative analysis to understand people’s problems or impressions of an existing social technology, and produce implications for design of new technology.
+</li>
+<li>Conduct a critical analysis of existing social technologies or academic literature in social computing through the application of theory, to produce design recommendations for new technology.
+</li>
+</ul>
+<P>
+At the conclusion of the project, your team will be responsible for writing a short research paper that summarizes the project.
+It should be 4-6 pages long (not including citations) in the style of
+an ACM CHI or CSCW posters or late-breaking work paper, using the <a href="https://chi2021.acm.org/for-authors/chi-publication-formats">single-column ACM template</a> that is the same as for full papers at CHI (NOT the landscape CHI EA template).
+</P>
+<BR>
+<h4>Project Milestones and Deliverables</h4>
+<P>
+	<b>Wed, Mar 31</b>: In-class brainstorming about projects. Bring to class 3 rough ideas for project directions.
+</P>
+<P>
+	<b>Mon, Apr 5</b>: In-class brainstorming about evaluation and study design. Pick 3 ideas you liked from last class and bring rough ideas for evaluating them.
+</P>
+<P>
+	<b>Mon, Apr 12</b>: Teams should be formed by today. In class, you'll give a 5 minute presentation of your project idea thus far and get feedback from peers.
+	Submit to Canvas a 1-page proposal outlining the plan for the project and proposed research method (this can be updated based on feedback).
+</P>
+<P>
+	<b>Wed, Apr 28</b>: Mid-point check-in. In class, you'll give a 5 minute presentation of your project progress so far and get feedback.
+	Submit to Canvas a 1-page summary of your current progress, changes you've made to the prior proposal,
+	 along with a short summary of related literature citing at least 4 papers 
+	that your project draws upon.
+</P>
+<P>
+	<b>Wed, Jun 2</b>: Final presentation. In class, you'll give a 10 minute presentation of your project, similar to a research presentation at a conference
+	with audience Q&A. At this point, you should be mostly wrapping up the work and working on the final write-up.
+	You can still receive feedback as your final write-up is not yet due.
+</P>
+<P>
+	<b>Wed, Jun 9</b>:
+	Submit to Canvas your final write-up. This should be written like a research paper, with typical sections like an introduction, related work,
+	 method/system description, evaluation/findings, discussion/design implications, and conclusion.
+</P>
+
+	</div>
+
+	<div class="section" id="grading"  data-href="index.html#grading" data-level="0" class="side-nav-header">
+	<h2 >Grading</h2>
+	   
+	    
+10%: In-class active participation in discussion, feedback, and presentations throughout the quarter<BR>
+10%: Discussion leader (5 points for each time you are a leader)<BR>
+27%: Reading responses and annotations (1.5 points per assignment for 17 reading assignments)<BR>
+10%: Assignments (2.5 points for each assignment)<BR>
+43%: Research project: <BR>
+&nbsp;&nbsp; - 2%: 3 project ideas<BR>
+&nbsp;&nbsp; - 2%: 3 evaluation ideas<BR>
+&nbsp;&nbsp; - 7%: project proposal<BR>
+&nbsp;&nbsp; - 7%: mid-point check-in<BR>
+&nbsp;&nbsp; - 5%: final presentation<BR>
+&nbsp;&nbsp; - 20%: final write-up<BR>
+
+	    </div>
+
+	<div class="section" id="acknowledgements"  data-href="index.html#acknowledgements" data-level="0" class="side-nav-header">
+	<h2 >Acknowledgements</h2>
+	
+	<P>
+		I consulted many people's syllabi while making this syllabus and also took <a href="https://twitter.com/amyxzh/status/1374565024241311749">reading suggestions</a> from many people online.
+		My thanks to you all.
+		Related courses include: 
+Sarita Schoenebeck's <a href="https://www.si.umich.edu/programs/courses/429">Online Communities</a> course at UMSI, 
+Ethan Zuckerman's <a href="http://fixingsocialmedia.mit.edu/">Fixing Social Media</a> course at MIT Media Lab,
+Amy Bruckman's <a href="https://www.cc.gatech.edu/~asb/teaching/oc/19/">Design of Online Communities</a> course at Georgia Tech,
+Eric Gilbert's and Munmun De Choudhury's <a href="http://comp.social.gatech.edu/cs8803/">Social</a> 
+<a href="http://www.munmund.net/CS6474_Spring2021.html">Computing</a> courses at Georgia Tech,
+Steven Dow's <a href="https://socialcomputing.ucsd.edu/">Social Computing</a> course at UCSD,
+Juho Kim's <a href="https://www.kixlab.org/courses/cs473-fall-2019/index.html">Introduction to Social Computing</a> course at KAIST,
+and Michael Bernstein's <a href="http://cs278.stanford.edu/">Social Computing</a> course at Stanford.
+
+
+ 
+	</P>
+
+	<p>The University of Washington acknowledges the Coast Salish peoples of this land, the land which touches the shared waters of all tribes and bands within the Suquamish, Tulalip and Muckleshoot nations.</p>
+	</div>
+
+	      </div>
+	</div>
+      <!-- End home page content -->
+
+    </div>
+    
+   </div>
+  </div>
+
+    <footer class="site-footer">
+        <!-- Javascript will load the footer code here. -->
+    </footer>
+
+  </body>
+
+</html>

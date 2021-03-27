@@ -14,7 +14,8 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 400 16px/1.5 "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	    line-height: 160%;
+  font: 400 16px/1.5 "Assistant", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #111;
   background-color: #ffffff;
   -webkit-text-size-adjust: 100%;
@@ -76,13 +77,14 @@ h1, h2, h3, h4 {
  * Links
  */
 a {
-  color: #2a7ae2;
+    color: #4C86F4;
+    font-weight: 400;
   text-decoration: none; }
 a:visited {
-  color: #1756a9; }
+  color: #4C86F4; }
 a:hover {
-  color: #b7a57a;;
-  text-decoration: underline; }
+  text-decoration: none;
+    color: orange; }
 
 /**
  * Blockquotes
@@ -118,15 +120,27 @@ pre > code {
   padding-right: 0;
   padding-left: 0; }
 
+h1, h2, h3, h4 {
+    font-family: "Roboto Mono", sans-serif;
+    color: #000;
+    	font-weight: 400;
+}
 
 /**
  * Site header
  */
 .site-header {
-  border-top: 5px solid #424242;
-  border-bottom: 1px solid #e8e8e8;
   min-height: 56px;
-  position: relative; }
+  position: relative; 
+  
+      margin: auto 0.5em;
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 1em;
+    line-height: 4em;
+    color: #000;
+    	font-weight: 300;
+      text-transform: uppercase;
+  }
 
 /**
  * Site footer
@@ -153,27 +167,39 @@ pre > code {
 
 /* Top Navigation Bar */
 
+.navbar {
+ border: 0px solid transparent;
+}
+
 .navbar-inverse {
     background-color: #ffffff;
 }
 
+.navbar-brand {
+    font-weight: 400;
+     text-transform: none;
+}
+
 .navbar-inverse .navbar-brand {
-  background-color: #2A7AE2;
-  color: white; }
+  color: #9d9d9d;
+  }
 
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
-  background-color: #2A7AE2; }
+  background-color: white; 
+  color: #9d9d9d;
+  }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: #2a7ae2; }
+  color: #000000; }
 
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-  color: #b7a57a; }
+  color: orange; }
 
 .navbar-right {
-  background-color: #2A7AE2; }
+  background-color: #9d9d9d; 
+  }
 
 .navbar-inverse .navbar-right > li > a,
 .navbar-inverse .navbar-right > li > a,
@@ -184,12 +210,12 @@ pre > code {
  }
  
  .navbar-toggle {
- 	background-color: #2A7AE2;
+ 	background-color: #9d9d9d; 
  }
  
  .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
     color: #fff;
-    background-color: #f5b90a;
+    background-color: orange;
 }
  
  
@@ -197,10 +223,11 @@ pre > code {
 /* Floating Navigation Box */
 
 .nav-box {
-    border: 1px solid #ccc;
+    /*border: 1px solid #ccc;*/
     background-color: #eee;
     float: right;
-    width: 10em;
+    width: 18em;
+    padding: 20px;
     margin: 0px 20px 0px 20px
 }
 
@@ -263,13 +290,14 @@ pre > code {
     display: block;
     width: 100%;
     font-size: 11pt;
+    color: #000000;
 }
 .nav-link {
     padding: 0.2em 0.5em;
 }
 
 .nav-sidebar li.active a, .nav-sidebar li a:hover, .nav-sidebar li a:focus, .nav-sidebar a.nav-link.active {
-    background-color: #2A7AE2;
+    background-color: orange;
     color: white;
     width: 100%;
     
@@ -277,13 +305,13 @@ pre > code {
 
 .section {
     border-top: 1px solid #000000;
-    padding-top: 3em;
-    padding-bottom: 1em;
+    padding-top: 3.5em;
+    padding-bottom: 1.5em;
     page-break-inside: auto;
 }
 
 .subsection {
-    padding-top: 2em;
+    padding-top: 3.5em;
     page-break-inside: auto;
 }
 
@@ -314,11 +342,11 @@ pre > code {
 
 
 .oddday {
-	background-color: #f9fbfe;
+	background-color: #fafafa;
 }
 
 .evenday {
-	background-color: #e8f1fc;
+	background-color: #ffffff;
 }
 
 
@@ -351,12 +379,24 @@ pre > code {
 
 .calendar .date {
     flex-basis: 10ch;
-    flex-grow: .3;
+    flex-grow: .1;
 }
 
-.calendar .topic, .calendar .links, .calendar .assignments,  .calendar .milestone {
+ .calendar .links {
+    flex-basis: 8ch;
+    flex-grow: 1.1;
+}
+
+.calendar .topic {
     flex-basis: 8ch;
     flex-grow: .9;
+    padding-right: 10px;
+}
+
+
+.calendar .assignments,  .calendar .milestone {
+    flex-basis: 8ch;
+    flex-grow: .1;
 }
 
 
